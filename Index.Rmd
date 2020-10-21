@@ -74,7 +74,7 @@ I'd suggest watching this back-to-back with the next video in the sequence, whic
 <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-working-in-rstudio" target="_blank">Working in RStudio</a>
 
 
-Rather than creating a new file from scratch right now, you can download the solutions from Module 1 as a workbook here [link]. And if you then open this up in RStudio you can get an idea of how the interface works. 
+Rather than creating a new file from scratch right now, you can download the solutions from Module 1 as a workbook [here](https://github.com/stats4sd/r2020_04Rstudio/raw/main/Module-1-Solutions.zip). And if you then open this up in RStudio you can get an idea of how the interface works. 
 
 
 Once open your window should look something like this
@@ -96,7 +96,7 @@ When you work down to the bottom of the solutions you will reach the examples wh
 
 ## Working with projects
 
-You can download the solutions for Module 2 in RMD format, and the data file used, in CSV format, here: [INSERT LINK]
+You can download the solutions for Module 2 in RMD format, and the data file used, in CSV format [here](https://github.com/stats4sd/r2020_04Rstudio/raw/main/Module-2-Solutions.zip)
 
 This is a good opportunity to learn about working with project files, importing data, and installing and loading packages.
 
