@@ -121,6 +121,11 @@ The video introduction for writing R scripts can be found here:
 <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-r-markdown" target="_blank">R Markdown</a>
 
 If you have set the project file, and installed ggplot you should now be able to go through the solutions file and run each of the chunks of code to see the 'solved' answers.
+Make sure you work through sequentially - loading the packages and the data first otherwise the later steps will not run. You can see from the first chunk a new function `read.csv` being used to read the data file in. We will learn more about reading in data in the second part of this module, but for now you can trust that, as long as you set up your project correctly, this line will read in the datafile and store it in R as an object called Pulse. When you run this line you should see it appear in your environment pane.
+![icon](img/environment.jpg)
+
+And if you click on it within that environment pane, it will open a (non-editable) spreadsheet like interface to view the data.
+
 
 When writing your own markdown files there are a few key points to remember:
 
