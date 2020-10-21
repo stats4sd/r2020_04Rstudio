@@ -1,0 +1,150 @@
+## Module 1:  Exercises
+
+(Note - these solutions contain embedded latex code for creating the mathematical formulae. Whenever you see the $ $ symbols in the main text this denotes some latex code. If you hover over it you will see the formula displayed as it would appear when compiled. So dont worry if this looks odd - this is not R code, and you can learn latex on another course!)
+
+### Question 1:
+I am trying to use R as a calculator, and am receiving an error. Can you spot my error and update the code?
+
+
+(42-5/(88+6)
+
+
+
+### Answer 1:
+
+My brackets are incorrectly specified as I open two sets of brackets but only close one.
+The correct solution is probably either `(42-5)/(88+6)` or `42-(5/(88+6))`, depending on what I actually wanted to do
+The former is probably more likely!
+
+```{r}
+(42-5)/(88+6)
+```
+
+
+### Question 2
+
+This question will use the same earthquakes dataset from the quiz, showing the magnitude of earthquakes occuring in the ocean around Fiji since 1964, as well as the number of different stations reporting the earthquake. This has been loaded into the R sessions as a data frame called `quakes` 
+
+### Question 2a
+Write a command to determine the largest magnitude (`mag`) earthquake recorded?
+
+
+### Answer 2a
+
+I would need to use the `max` command, and then specify that i want to use the `mag` column within the `quakes` dataset by using the data frame name `quakes` followed by a `$` follwed by the column name `mag`
+
+```{r}
+max(quakes$mag)
+
+```
+
+### Question 2b
+Write a command to determine the smallest depth (`depth`) below surface that an earthquake was recorded?
+
+### Answer 2b
+
+I would need to use the `min` command, and then specify that i want to use the `depth` column within the `quakes` dataset by using the data frame name `quakes` followed by a `$` follwed by the column name `depth`
+
+```{r}
+min(quakes$mag)
+```
+
+
+### Question 2c
+I would like to obtain the standard deviation of the earthquake magnitude column from the `quakes` dataset. See if you can find the function for standard deviation in R (we have not mentioned it in the course workbook so far) and then apply it to the relevant column
+
+### Answer 2c
+
+From a bit of searching, hopefully you found the `sd` function. This works in the same way as we have seen with `max` and `min`
+```{r}
+sd(quakes$mag)
+```
+
+
+### Question 3
+I am a Physicist who is doing some equations involving projectile motion and want to write some code to save me some time. The formula for this is
+$Range = \frac{v^{2}} {g} \times sin(2 \theta)$
+
+Create objects called `v`,`g` and `theta` and set v equal to 5; g equal to 9.8 and theta equal to 45. 
+
+Then, you will need to write some code to convert an angle in degrees to an angle in radians, as trigonometric functions in R only operate in radians. So you will need to multiply theta by $\frac{\pi} {180}$. Store this as an object called `theta_radian`. The constant $\pi$ exists already in R as a named object called `pi`.
+
+Then write the code to calculate the range I would expect my object to be projected if initial velocity was 5$m/s$, the angle of projection was 45 degrees and we were on Earth, so the gravity was equal to 9.8$m/s^2$
+
+
+#Answer 3
+
+I first will need to create constants using the assign operator `<-` as specified in the question.
+
+Then write the transformation line to convert theta to radians.
+
+Then I can use these objects in the formula. Make sure you are careful with use of brackets. Remember to use the converted object `theta_radian` rather than the original object `theta`. Also remember that you will need to write `sin(2*theta_radian)` to multiple theta by 2. R will not be able to interpret `sin(2theta_radian)`
+
+```{r}
+v<-5
+g<-9.8
+theta<-45
+
+theta_radian<-theta*pi/180
+
+
+(v^2 / g)*sin(2*theta_radian)
+
+```
+
+Now I want to see what happens when I modify the angle. Instead of a single number, replace theta with several numbers to see how the range varies - I am interested in seeing the results for angles of 30, 35, 40, 45 and 50 degrees.
+
+
+##Answer 3b
+
+We will use the `c()` to provide multiple angles to the theta object. We do not need to change any other part of the code other than theta.
+
+```{r}
+v<-5
+g<-9.8
+theta<-c(30,35,40,45,50)
+
+theta_radian<-theta*pi/180
+
+
+(v^2 / g)*sin(2*theta_radian)
+
+```
+You should see that the distance is furthest for an angle of 45 degrees. From my limited knowledge of physics, this sounds like it makes sense to me!
+
+
+### Question 4:
+A task I am sure you remember from school is to solve a quadratic equation using the formula $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$.
+Write some R code to find the two values of x when $x^2-9x+19=0$ . As a reminder, in the quadratic equation formula from this particular example `a` would be 1; `b` would be -9 and `c` would be 19
+
+###Answer 4
+
+I am going to write this in general terms, similar to question 3, so that if i wanted to change my code for a different formula later, then i could. However, I didn't explicitly ask you to do that, so if you directly plugged in 1, -9 and 19 into a formula this would still be fine.
+
+The main trick here is to use the `c()` function to replace the +- operator as this is equivalent to saying "plus one times" or "minus one times", so we can provide a vector of `-1` and `1` to the code we write so that we only have to write one line for the main part of the solution.
+
+Brackets are incredibly easy to get wrong on this one. Be extremely careful working out where to place them! My solution below has the minimum number of brackets necessary (due to BODMAS rules), but there is no harm in including extra brackets, just to be safe, if you want to ensure that the order of operations acts as you expect.
+
+As with question 3 - make sure to write `4*a*c` to multiply these together; R would not be able to interpret `4ac`.
+However R can interpet `-b` providing b is a number. If you wrote `-1*b` here though that would also be perfectly correct.
+
+```{r}
+
+a<-1
+b<--9
+c<-19
+
+x<-(-b+c(1,-1)*sqrt(b^2-4*a*c))/(2*a)
+
+x
+
+```
+
+As i'm sure you learnt at school - it's always good practice to plug these numbers back into the equation to see if it makes sense! Saving my object as x in the previous step makes this easy.
+
+```{r}
+
+x^2 -(9*x) +19
+```
+You will see here that you don't actually get a zero for the first number. Unfortunately R will sometimes come up with rounding errors. Remember in scientific notation that "3.552714e-15" is equal to "0.00000000000000355".So i think i am happy to conclude that I got my formula correct!
+

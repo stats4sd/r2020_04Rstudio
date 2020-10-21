@@ -1,0 +1,351 @@
+"Gender","Age","AgeGrp","Race","Income","Education","PoliticalParty","PoliticalView","ApproveTrump","Attractiveness"
+"Female",70,"65+","Black",20000,"High school or less","Independent","Liberal","Disapprove",10
+"Male",72,"65+","White",56000,"College degree","Independent","Moderate","Approve",8
+"Male",65,"65+","Black",60000,"College degree","Independent","Conservative","Disapprove",7
+"Female",63,"55-64","White",10000,"High school or less","Independent","Moderate","Neither approve nor disapprove",4
+"Female",64,"55-64","White",68000,"Some college","Independent","Moderate","Disapprove",7
+"Male",64,"55-64","Black",50000,"High school or less","Independent","Conservative","Disapprove",9
+"Male",66,"65+","White",24000,"High school or less","Democrat","Liberal","Disapprove",5
+"Male",60,"55-64","White",16000,"College degree","Republican","Other/None","Approve",7
+"Male",85,"65+","White",20000,"Graduate degree","Independent","Moderate","Neither approve nor disapprove",6
+"Male",80,"65+","White",30000,"Graduate degree","Republican","Conservative","Approve",5
+"Male",62,"55-64","White",150000,"Graduate degree","Independent","Conservative","Approve",8
+"Female",70,"65+","Black",2500,"High school or less","Independent","Liberal","Disapprove",10
+"Female",85,"65+","White",12000,"Some college","Republican","Conservative","Approve",8
+"Female",75,"65+","White",14000,"Some college","Independent","Moderate","Approve",8
+"Male",78,"65+","White",30000,"College degree","Republican","Conservative","Approve",5
+"Female",74,"65+","White",36000,"High school or less","Republican","Liberal","Neither approve nor disapprove",8
+"Female",56,"55-64","White",1000,"Graduate degree","Democrat","Liberal","Disapprove",5
+"Male",87,"65+","White",30000,"Some college","Republican","Conservative","Approve",7
+"Male",70,"65+","White",80000,"Graduate degree","Democrat","Liberal","Disapprove",7
+"Female",64,"55-64","Black",20000,"Some college","Independent","Conservative","Disapprove",8
+"Female",51,"45-54","White",20000,"College degree","Independent","Moderate","Disapprove",7
+"Male",48,"45-54","Latino",300000,"High school or less","Republican","Conservative","Approve",6
+"Female",30,"25-34","White",53000,"Graduate degree","Republican","Conservative","Approve",7
+"Female",78,"65+","White",20000,"College degree","Republican","Conservative","Approve",8
+"Female",55,"55-64","Black",85000,"Graduate degree","Democrat","Moderate","Disapprove",8
+"Female",45,"45-54","White",45000,"College degree","Democrat","Liberal","Disapprove",7
+"Female",30,"25-34","Black",8000,"College degree","Independent","Moderate","Disapprove",10
+"Female",24,"18-24","Other",75000,"College degree","Democrat","Liberal","Disapprove",6
+"Male",46,"45-54","White",200000,"College degree","Republican","Conservative","Approve",10
+"Female",44,"35-44","Black",45000,"Some college","Democrat","Conservative","Disapprove",9
+"Male",40,"35-44","Asian",112000,"Graduate degree","Independent","Moderate","Disapprove",4
+"Female",69,"65+","White",20000,"Other","Independent","Conservative","Approve",5
+"Female",23,"18-24","Other",40000,"Some college","Independent","Liberal","Disapprove",8
+"Male",54,"45-54","Black",40000,"Some college","Democrat","Liberal","Disapprove",8
+"Female",69,"65+","White",5000,"College degree","Independent","Moderate","Disapprove",7
+"Male",26,"25-34","White",36000,"High school or less","Democrat","Moderate","Disapprove",7
+"Male",64,"55-64","White",30000,"High school or less","Republican","Conservative","Approve",8
+"Female",71,"65+","White",70000,"Graduate degree","Independent","Moderate","Approve",6
+"Female",48,"45-54","Black",30000,"College degree","Democrat","Conservative","Disapprove",9
+"Male",30,"25-34","Black",150000,"College degree","Democrat","Liberal","Disapprove",8
+"Male",30,"25-34","White",40000,"Some college","Republican","Moderate","Neither approve nor disapprove",8
+"Male",40,"35-44","Black",35000,"High school or less","Independent","Moderate","Disapprove",7
+"Male",49,"45-54","White",92000,"Graduate degree","Independent","Conservative","Neither approve nor disapprove",5
+"Female",58,"55-64","White",100000,"College degree","Independent","Conservative","Approve",6
+"Male",20,"18-24","Other",20000,"Some college","Independent","Other/None","Neither approve nor disapprove",8
+"Female",61,"55-64","White",100000,"High school or less","Independent","Conservative","Approve",10
+"Female",21,"18-24","Latino",60000,"College degree","Republican","Moderate","Disapprove",9
+"Male",47,"45-54","White",23400,"High school or less","Democrat","Liberal","Approve",10
+"Male",70,"65+","White",30000,"High school or less","Independent","Moderate","Approve",6
+"Male",74,"65+","White",30000,"Some college","Independent","Conservative","Neither approve nor disapprove",5
+"Female",70,"65+","Black",14000,"High school or less","Democrat","Other/None","Disapprove",10
+"Female",47,"45-54","White",60000,"High school or less","Republican","Conservative","Approve",9
+"Male",48,"45-54","Black",150000,"Graduate degree","Democrat","Liberal","Disapprove",10
+"Female",31,"25-34","White",21000,"College degree","Independent","Conservative","Approve",4
+"Male",70,"65+","White",120000,"Graduate degree","Independent","Moderate","Approve",8
+"Female",77,"65+","White",150000,"Other","Democrat","Liberal","Disapprove",8
+"Female",40,"35-44","White",20000,"Some college","Independent","Moderate","Disapprove",1
+"Female",76,"65+","White",50000,"High school or less","Independent","Moderate","Approve",5
+"Male",85,"65+","White",130000,"Graduate degree","Republican","Conservative","Approve",5
+"Male",66,"65+","Other",25000,"Some college","Democrat","Conservative","Approve",6
+"Female",64,"55-64","Other",60000,"College degree","Democrat","Moderate","Disapprove",8
+"Male",70,"65+","White",45000,"Some college","Republican","Conservative","Approve",8
+"Female",65,"65+","White",60000,"College degree","Republican","Moderate","Approve",5
+"Female",88,"65+","White",100000,"College degree","Democrat","Liberal","Disapprove",4
+"Female",22,"18-24","Latino",30000,"Other","Democrat","Liberal","Disapprove",8
+"Male",79,"65+","White",30000,"High school or less","Republican","Conservative","Approve",8
+"Female",69,"65+","White",50000,"College degree","Democrat","Liberal","Disapprove",8
+"Male",24,"18-24","Latino",25000,"Some college","Republican","Moderate","Disapprove",6
+"Male",76,"65+","White",40000,"Some college","Republican","Conservative","Approve",5
+"Male",70,"65+","White",70000,"High school or less","Independent","Moderate","Disapprove",5
+"Male",56,"55-64","White",13000,"Some college","Republican","Conservative","Approve",5
+"Female",84,"65+","White",12000,"College degree","Democrat","Conservative","Disapprove",5
+"Female",38,"35-44","White",160000,"Graduate degree","Independent","Moderate","Disapprove",7
+"Female",69,"65+","White",12000,"Some college","Republican","Conservative","Approve",7
+"Female",50,"45-54","Other",62000,"College degree","Independent","Other/None","Disapprove",9
+"Female",70,"65+","Black",30000,"High school or less","Democrat","Liberal","Disapprove",10
+"Male",69,"65+","Latino",5400,"Some college","Independent","Moderate","Disapprove",8
+"Male",86,"65+","White",20000,"Graduate degree","Democrat","Liberal","Disapprove",5
+"Female",65,"65+","White",200000,"High school or less","Independent","Conservative","Approve",6
+"Male",83,"65+","White",50000,"High school or less","Independent","Conservative","Approve",5
+"Female",67,"65+","White",37000,"Some college","Democrat","Moderate","Disapprove",6
+"Female",66,"65+","White",40000,"High school or less","Democrat","Moderate","Disapprove",4
+"Male",65,"65+","Other",14000,"Some college","Independent","Moderate","Disapprove",10
+"Male",54,"45-54","Asian",100000,"Graduate degree","Democrat","Conservative","Approve",6
+"Female",64,"55-64","White",50000,"Graduate degree","Democrat","Moderate","Disapprove",6
+"Male",92,"65+","White",50000,"College degree","Republican","Conservative","Approve",8
+"Male",34,"25-34","White",21000,"College degree","Democrat","Moderate","Approve",8
+"Female",57,"55-64","White",25000,"High school or less","Independent","Other/None","Approve",5
+"Male",68,"65+","White",15000,"High school or less","Republican","Liberal","Approve",8
+"Male",50,"45-54","White",100000,"Graduate degree","Democrat","Liberal","Disapprove",6
+"Female",32,"25-34","White",18000,"High school or less","Democrat","Liberal","Disapprove",6
+"Male",24,"18-24","Other",40000,"High school or less","Independent","Liberal","Disapprove",7
+"Male",59,"55-64","White",70000,"Some college","Democrat","Moderate","Disapprove",5
+"Male",51,"45-54","White",55000,"College degree","Democrat","Liberal","Disapprove",7
+"Male",56,"55-64","White",42000,"High school or less","Independent","Other/None","Disapprove",7
+"Male",67,"65+","White",83000,"Graduate degree","Democrat","Liberal","Disapprove",8
+"Female",47,"45-54","Other",125000,"Graduate degree","Democrat","Liberal","Disapprove",5
+"Male",19,"18-24","White",13000,"Some college","Democrat","Liberal","Disapprove",7
+"Male",62,"55-64","White",25000,"Some college","Independent","Other/None","Approve",3
+"Female",66,"65+","White",60000,"Graduate degree","Independent","Conservative","Disapprove",7
+"Male",45,"45-54","White",50000,"Graduate degree","Republican","Conservative","Approve",6
+"Female",20,"18-24","White",5148,"High school or less","Independent","Moderate","Disapprove",6
+"Male",79,"65+","White",40000,"Graduate degree","Republican","Conservative","Approve",7
+"Male",35,"35-44","Asian",45000,"College degree","Independent","Conservative","Disapprove",5
+"Female",41,"35-44","Latino",25000,"High school or less","Independent","Moderate","Neither approve nor disapprove",8
+"Female",45,"45-54","White",70000,"Some college","Democrat","Conservative","Approve",4
+"Female",71,"65+","White",35000,"Graduate degree","Democrat","Liberal","Disapprove",7
+"Male",70,"65+","Other",74000,"Some college","Republican","Conservative","Approve",7
+"Male",57,"55-64","White",10000,"College degree","Republican","Moderate","Approve",7
+"Female",69,"65+","White",10000,"Some college","Republican","Conservative","Approve",7
+"Female",57,"55-64","White",100000,"College degree","Democrat","Liberal","Disapprove",5
+"Male",57,"55-64","White",25000,"College degree","Republican","Conservative","Approve",5
+"Male",62,"55-64","Black",80000,"College degree","Independent","Moderate","Disapprove",8
+"Male",57,"55-64","White",30000,"High school or less","Democrat","Liberal","Disapprove",1
+"Female",68,"65+","White",12000,"Some college","Republican","Conservative","Approve",10
+"Male",73,"65+","White",56000,"Some college","Independent","Conservative","Approve",5
+"Female",76,"65+","White",2000,"High school or less","Republican","Moderate","Neither approve nor disapprove",4
+"Female",79,"65+","White",24000,"Graduate degree","Independent","Conservative","Approve",6
+"Female",77,"65+","White",23000,"Some college","Republican","Conservative","Approve",5
+"Female",52,"45-54","White",100000,"High school or less","Republican","Conservative","Approve",6
+"Female",68,"65+","White",12000,"Other","Independent","Conservative","Disapprove",6
+"Female",32,"25-34","White",6000,"Some college","Republican","Conservative","Neither approve nor disapprove",6
+"Female",41,"35-44","White",25000,"College degree","Republican","Conservative","Approve",7
+"Male",37,"35-44","Black",50000,"Some college","Independent","Moderate","Neither approve nor disapprove",8
+"Female",32,"25-34","Latino",50000,"College degree","Independent","Moderate","Disapprove",8
+"Male",65,"65+","White",24000,"College degree","Republican","Conservative","Approve",7
+"Male",25,"25-34","Latino",30000,"High school or less","Independent","Conservative","Approve",10
+"Male",50,"45-54","Black",24000,"High school or less","Independent","Liberal","Disapprove",8
+"Male",68,"65+","White",150000,"College degree","Democrat","Liberal","Disapprove",8
+"Female",23,"18-24","White",30000,"College degree","Independent","Conservative","Disapprove",6
+"Male",50,"45-54","White",275000,"College degree","Democrat","Liberal","Disapprove",6
+"Male",25,"25-34","Latino",50000,"Graduate degree","Republican","Moderate","Disapprove",8
+"Female",73,"65+","White",46000,"Graduate degree","Independent","Liberal","Disapprove",8
+"Male",73,"65+","White",50000,"Some college","Republican","Conservative","Approve",6
+"Female",55,"55-64","White",7000,"College degree","Independent","Other/None","Disapprove",8
+"Female",61,"55-64","Other",7000,"Some college","Democrat","Liberal","Disapprove",7
+"Female",65,"65+","White",20000,"Some college","Democrat","Conservative","Disapprove",4
+"Male",68,"65+","White",200000,"College degree","Independent","Conservative","Disapprove",7
+"Male",33,"25-34","White",250000,"College degree","Independent","Conservative","Neither approve nor disapprove",8
+"Female",52,"45-54","White",30000,"Graduate degree","Independent","Liberal","Disapprove",8
+"Female",47,"45-54","White",85000,"College degree","Independent","Liberal","Disapprove",8
+"Female",50,"45-54","White",10000,"Graduate degree","Democrat","Conservative","Disapprove",8
+"Male",71,"65+","White",70000,"College degree","Independent","Moderate","Disapprove",8
+"Female",53,"45-54","White",50000,"College degree","Republican","Moderate","Neither approve nor disapprove",8
+"Female",52,"45-54","White",19000,"College degree","Republican","Conservative","Approve",2
+"Male",59,"55-64","White",18000,"Some college","Democrat","Conservative","Disapprove",4
+"Female",75,"65+","White",38000,"Some college","Democrat","Conservative","Disapprove",8
+"Female",70,"65+","White",100000,"Graduate degree","Democrat","Moderate","Disapprove",6
+"Female",81,"65+","White",75000,"Graduate degree","Republican","Moderate","Approve",8
+"Male",76,"65+","White",26000,"Some college","Republican","Moderate","Approve",7
+"Female",56,"55-64","White",25000,"College degree","Republican","Moderate","Approve",5
+"Male",63,"55-64","White",23000,"College degree","Democrat","Conservative","Disapprove",9
+"Male",89,"65+","White",15000,"Some college","Independent","Moderate","Disapprove",8
+"Female",54,"45-54","White",28000,"High school or less","Independent","Conservative","Neither approve nor disapprove",8
+"Male",49,"45-54","White",250000,"Graduate degree","Independent","Moderate","Disapprove",6
+"Male",30,"25-34","White",100000,"College degree","Republican","Conservative","Neither approve nor disapprove",7
+"Male",34,"25-34","White",70000,"Some college","Democrat","Liberal","Disapprove",5
+"Female",44,"35-44","Asian",80000,"College degree","Republican","Conservative","Approve",7
+"Male",80,"65+","White",70000,"Graduate degree","Democrat","Liberal","Disapprove",5
+"Male",80,"65+","White",90000,"College degree","Democrat","Moderate","Disapprove",10
+"Female",69,"65+","White",36000,"Graduate degree","Democrat","Liberal","Disapprove",5
+"Male",19,"18-24","White",20000,"Some college","Independent","Moderate","Approve",8
+"Female",65,"65+","White",50000,"High school or less","Republican","Conservative","Approve",7
+"Male",64,"55-64","White",80000,"College degree","Republican","Moderate","Disapprove",6
+"Female",20,"18-24","Latino",70000,"Graduate degree","Democrat","Conservative","Disapprove",8
+"Female",37,"35-44","White",34000,"College degree","Independent","Conservative","Disapprove",7
+"Female",20,"18-24","White",20000,"Some college","Democrat","Liberal","Disapprove",7
+"Male",57,"55-64","White",200000,"College degree","Republican","Moderate","Approve",6
+"Male",47,"45-54","Black",750000,"High school or less","Democrat","Moderate","Disapprove",10
+"Male",60,"55-64","White",24000,"Other","Republican","Conservative","Approve",6
+"Male",66,"65+","White",57000,"Graduate degree","Democrat","Moderate","Disapprove",7
+"Male",21,"18-24","Other",150000,"High school or less","Republican","Conservative","Approve",10
+"Female",26,"25-34","White",33000,"College degree","Independent","Moderate","Neither approve nor disapprove",7
+"Male",81,"65+","White",55000,"Graduate degree","Republican","Conservative","Approve",8
+"Female",30,"25-34","White",37000,"College degree","Republican","Conservative","Approve",6
+"Male",60,"55-64","White",14000,"College degree","Independent","Conservative","Approve",4
+"Male",91,"65+","White",100000,"Graduate degree","Democrat","Liberal","Disapprove",7
+"Male",68,"65+","White",64000,"Some college","Independent","Conservative","Disapprove",5
+"Male",62,"55-64","White",95000,"Graduate degree","Independent","Moderate","Disapprove",5
+"Female",75,"65+","White",30000,"Some college","Republican","Conservative","Approve",8
+"Female",69,"65+","White",10000,"Some college","Republican","Moderate","Disapprove",8
+"Male",78,"65+","White",15000,"Some college","Republican","Conservative","Approve",5
+"Male",67,"65+","White",160000,"Other","Independent","Moderate","Disapprove",8
+"Female",71,"65+","White",20000,"Some college","Independent","Conservative","Approve",5
+"Male",73,"65+","White",95000,"Graduate degree","Republican","Conservative","Approve",5
+"Male",37,"35-44","White",27000,"High school or less","Independent","Moderate","Approve",5
+"Female",76,"65+","Latino",46000,"Some college","Independent","Conservative","Approve",5
+"Male",68,"65+","White",75000,"Graduate degree","Republican","Moderate","Approve",7
+"Female",81,"65+","White",30000,"High school or less","Independent","Moderate","Disapprove",3
+"Female",86,"65+","White",20000,"Some college","Democrat","Other/None","Disapprove",4
+"Female",19,"18-24","White",20000,"College degree","Republican","Moderate","Approve",7
+"Female",44,"35-44","White",17000,"High school or less","Democrat","Moderate","Approve",5
+"Male",68,"65+","White",28000,"High school or less","Republican","Moderate","Approve",7
+"Male",71,"65+","Black",35000,"High school or less","Democrat","Moderate","Approve",10
+"Male",20,"18-24","White",70000,"Graduate degree","Independent","Moderate","Neither approve nor disapprove",6
+"Female",55,"55-64","White",50000,"High school or less","Republican","Liberal","Approve",5
+"Male",56,"55-64","White",50000,"College degree","Independent","Other/None","Approve",7
+"Female",59,"55-64","White",48000,"College degree","Democrat","Liberal","Disapprove",5
+"Male",60,"55-64","White",50000,"Graduate degree","Republican","Conservative","Approve",2
+"Female",66,"65+","White",25000,"Some college","Independent","Liberal","Disapprove",5
+"Female",28,"25-34","White",36000,"College degree","Independent","Liberal","Disapprove",8
+"Female",47,"45-54","White",48000,"Some college","Democrat","Moderate","Disapprove",8
+"Male",67,"65+","White",65000,"Some college","Republican","Conservative","Approve",8
+"Male",57,"55-64","White",80000,"College degree","Republican","Conservative","Approve",8
+"Female",51,"45-54","White",25000,"College degree","Republican","Conservative","Approve",7
+"Male",50,"45-54","White",24000,"Some college","Republican","Moderate","Approve",8
+"Male",54,"45-54","Asian",90000,"College degree","Republican","Conservative","Neither approve nor disapprove",6
+"Male",45,"45-54","White",100000,"Some college","Independent","Moderate","Approve",6
+"Female",30,"25-34","White",30000,"Other","Independent","Liberal","Disapprove",7
+"Female",64,"55-64","White",50000,"College degree","Republican","Moderate","Neither approve nor disapprove",6
+"Female",46,"45-54","White",140000,"Graduate degree","Independent","Moderate","Disapprove",7
+"Female",51,"45-54","White",42000,"Other","Republican","Conservative","Approve",6
+"Male",43,"35-44","Black",68000,"Some college","Independent","Moderate","Disapprove",7
+"Female",53,"45-54","White",140000,"High school or less","Independent","Conservative","Approve",7
+"Female",56,"55-64","White",100000,"High school or less","Democrat","Moderate","Disapprove",7
+"Male",52,"45-54","White",200000,"High school or less","Independent","Moderate","Neither approve nor disapprove",5
+"Male",55,"55-64","White",50000,"Graduate degree","Republican","Conservative","Approve",8
+"Male",80,"65+","White",82000,"College degree","Democrat","Conservative","Approve",5
+"Female",64,"55-64","White",70000,"College degree","Independent","Moderate","Approve",5
+"Male",31,"25-34","Latino",25000,"College degree","Democrat","Liberal","Neither approve nor disapprove",7
+"Female",35,"35-44","White",20000,"College degree","Democrat","Liberal","Disapprove",10
+"Male",73,"65+","Black",100000,"College degree","Democrat","Moderate","Disapprove",8
+"Male",85,"65+","White",30000,"Graduate degree","Independent","Conservative","Approve",10
+"Female",75,"65+","Black",16000,"High school or less","Democrat","Other/None","Disapprove",9
+"Male",75,"65+","White",22000,"High school or less","Independent","Conservative","Approve",6
+"Male",69,"65+","White",100000,"College degree","Democrat","Moderate","Disapprove",5
+"Female",65,"65+","White",50000,"High school or less","Republican","Conservative","Approve",6
+"Female",55,"55-64","White",30000,"Some college","Republican","Liberal","Approve",7
+"Male",71,"65+","White",50000,"Some college","Republican","Conservative","Approve",7
+"Female",51,"45-54","White",50000,"Some college","Republican","Conservative","Approve",8
+"Male",27,"25-34","White",50000,"High school or less","Independent","Moderate","Approve",7
+"Male",20,"18-24","White",15000,"Some college","Republican","Moderate","Approve",8
+"Female",37,"35-44","Black",40000,"College degree","Democrat","Conservative","Disapprove",10
+"Male",76,"65+","White",40000,"Some college","Independent","Conservative","Approve",10
+"Male",68,"65+","White",60000,"Some college","Democrat","Moderate","Disapprove",6
+"Male",65,"65+","White",42000,"High school or less","Independent","Moderate","Approve",7
+"Male",80,"65+","Black",125000,"Graduate degree","Independent","Other/None","Neither approve nor disapprove",10
+"Male",67,"65+","White",80000,"College degree","Independent","Conservative","Approve",6
+"Male",30,"25-34","White",50000,"Graduate degree","Independent","Conservative","Approve",5
+"Male",37,"35-44","White",60000,"High school or less","Republican","Conservative","Approve",5
+"Female",58,"55-64","White",20000,"Graduate degree","Democrat","Moderate","Disapprove",7
+"Female",62,"55-64","White",45000,"Some college","Independent","Moderate","Disapprove",6
+"Male",77,"65+","White",50000,"Some college","Democrat","Moderate","Disapprove",5
+"Female",53,"45-54","White",165000,"Graduate degree","Republican","Moderate","Disapprove",8
+"Female",68,"65+","White",24000,"High school or less","Republican","Conservative","Approve",7
+"Male",59,"55-64","White",40000,"College degree","Independent","Conservative","Approve",6
+"Male",75,"65+","White",10000,"Some college","Democrat","Liberal","Approve",10
+"Male",64,"55-64","White",60000,"High school or less","Republican","Liberal","Approve",4
+"Female",59,"55-64","White",6000,"High school or less","Democrat","Conservative","Approve",8
+"Male",62,"55-64","White",120000,"Some college","Republican","Moderate","Disapprove",5
+"Male",55,"55-64","White",90000,"Graduate degree","Independent","Liberal","Neither approve nor disapprove",5
+"Female",75,"65+","White",40000,"Graduate degree","Democrat","Moderate","Disapprove",7
+"Female",67,"65+","Black",50000,"Graduate degree","Democrat","Liberal","Disapprove",6
+"Female",50,"45-54","White",100000,"College degree","Republican","Moderate","Neither approve nor disapprove",4
+"Female",67,"65+","White",90000,"College degree","Democrat","Liberal","Disapprove",5
+"Female",78,"65+","White",72000,"Graduate degree","Democrat","Moderate","Disapprove",7
+"Female",61,"55-64","Other",75000,"Graduate degree","Independent","Liberal","Disapprove",8
+"Male",63,"55-64","White",70000,"Some college","Independent","Conservative","Approve",7
+"Male",72,"65+","White",30000,"High school or less","Independent","Conservative","Approve",6
+"Female",80,"65+","White",90000,"Some college","Independent","Liberal","Disapprove",9
+"Female",65,"65+","White",80000,"Graduate degree","Democrat","Moderate","Neither approve nor disapprove",5
+"Female",97,"65+","Other",200000,"Graduate degree","Republican","Conservative","Approve",10
+"Female",96,"65+","White",8000,"Graduate degree","Independent","Moderate","Neither approve nor disapprove",7
+"Male",75,"65+","White",20000,"High school or less","Republican","Other/None","Approve",8
+"Female",46,"45-54","White",9500,"College degree","Republican","Moderate","Approve",7
+"Female",72,"65+","White",30000,"Some college","Independent","Conservative","Neither approve nor disapprove",5
+"Female",55,"55-64","Other",24000,"Some college","Independent","Moderate","Approve",5
+"Male",59,"55-64","White",120000,"College degree","Republican","Conservative","Approve",8
+"Female",53,"45-54","White",90000,"College degree","Republican","Moderate","Neither approve nor disapprove",6
+"Female",25,"25-34","White",50000,"Graduate degree","Independent","Moderate","Disapprove",8
+"Female",75,"65+","White",25000,"Some college","Democrat","Moderate","Disapprove",4
+"Male",74,"65+","White",30000,"High school or less","Independent","Liberal","Disapprove",4
+"Male",38,"35-44","Asian",150000,"College degree","Independent","Liberal","Disapprove",5
+"Female",77,"65+","White",40000,"College degree","Democrat","Liberal","Disapprove",7
+"Male",19,"18-24","White",20000,"Some college","Republican","Conservative","Neither approve nor disapprove",4
+"Male",75,"65+","White",45000,"College degree","Republican","Conservative","Approve",7
+"Male",41,"35-44","White",100000,"Graduate degree","Independent","Moderate","Approve",6
+"Female",37,"35-44","White",50000,"Some college","Republican","Conservative","Approve",10
+"Female",53,"45-54","White",30000,"High school or less","Democrat","Moderate","Disapprove",8
+"Female",43,"35-44","White",95000,"College degree","Democrat","Moderate","Disapprove",7
+"Male",53,"45-54","Black",250000,"Graduate degree","Democrat","Conservative","Disapprove",9
+"Female",38,"35-44","Black",70000,"College degree","Democrat","Moderate","Disapprove",9
+"Male",33,"25-34","White",24000,"High school or less","Democrat","Moderate","Disapprove",5
+"Female",75,"65+","White",90000,"Graduate degree","Independent","Liberal","Disapprove",5
+"Male",66,"65+","Black",45000,"Some college","Democrat","Moderate","Disapprove",5
+"Male",31,"25-34","White",80000,"High school or less","Independent","Moderate","Approve",7
+"Male",88,"65+","White",100000,"High school or less","Democrat","Conservative","Disapprove",9
+"Female",35,"35-44","Black",15000,"College degree","Democrat","Liberal","Approve",8
+"Male",65,"65+","Asian",150000,"Graduate degree","Independent","Moderate","Disapprove",8
+"Female",70,"65+","Latino",60000,"College degree","Independent","Conservative","Disapprove",10
+"Female",60,"55-64","White",50000,"College degree","Democrat","Liberal","Disapprove",5
+"Female",26,"25-34","Latino",20000,"High school or less","Republican","Moderate","Approve",6
+"Female",54,"45-54","White",50000,"College degree","Republican","Conservative","Approve",5
+"Male",70,"65+","White",18000,"Graduate degree","Democrat","Moderate","Disapprove",8
+"Female",80,"65+","Black",80000,"Graduate degree","Democrat","Conservative","Disapprove",10
+"Female",67,"65+","White",21000,"Some college","Democrat","Conservative","Disapprove",4
+"Male",36,"35-44","Black",10000,"High school or less","Democrat","Liberal","Disapprove",7
+"Male",70,"65+","Black",40000,"High school or less","Independent","Moderate","Disapprove",7
+"Male",56,"55-64","White",80000,"Some college","Republican","Conservative","Approve",7
+"Female",62,"55-64","Asian",20000,"College degree","Republican","Liberal","Approve",8
+"Male",27,"25-34","Black",12000,"High school or less","Independent","Moderate","Disapprove",7
+"Female",76,"65+","White",34000,"College degree","Republican","Moderate","Approve",6
+"Female",55,"55-64","White",12000,"High school or less","Republican","Conservative","Approve",9
+"Female",55,"55-64","Black",70000,"Graduate degree","Democrat","Moderate","Disapprove",8
+"Male",18,"18-24","White",10000,"Some college","Democrat","Liberal","Neither approve nor disapprove",8
+"Male",60,"55-64","White",300000,"Graduate degree","Independent","Moderate","Disapprove",8
+"Female",37,"35-44","White",120000,"College degree","Republican","Conservative","Approve",6
+"Female",64,"55-64","White",150000,"College degree","Independent","Moderate","Disapprove",8
+"Female",59,"55-64","White",50000,"College degree","Democrat","Moderate","Neither approve nor disapprove",7
+"Male",61,"55-64","White",88000,"Some college","Democrat","Moderate","Disapprove",8
+"Female",50,"45-54","White",25000,"High school or less","Republican","Conservative","Disapprove",9
+"Female",65,"65+","White",12000,"Some college","Independent","Moderate","Disapprove",5
+"Female",56,"55-64","White",75000,"Graduate degree","Independent","Moderate","Disapprove",8
+"Female",50,"45-54","Other",100000,"College degree","Independent","Other/None","Disapprove",10
+"Male",58,"55-64","White",150000,"Graduate degree","Democrat","Moderate","Disapprove",6
+"Male",55,"55-64","White",50000,"High school or less","Independent","Moderate","Disapprove",5
+"Male",46,"45-54","Other",50000,"Some college","Republican","Conservative","Approve",8
+"Male",58,"55-64","Black",175000,"Some college","Democrat","Liberal","Neither approve nor disapprove",10
+"Male",61,"55-64","Other",90000,"High school or less","Republican","Moderate","Approve",5
+"Female",50,"45-54","Black",55000,"Some college","Independent","Moderate","Approve",7
+"Male",54,"45-54","White",45000,"College degree","Republican","Conservative","Approve",10
+"Female",33,"25-34","White",100000,"Graduate degree","Republican","Conservative","Approve",8
+"Female",70,"65+","White",20000,"Some college","Democrat","Moderate","Disapprove",5
+"Male",38,"35-44","Black",40000,"Some college","Independent","Other/None","Neither approve nor disapprove",9
+"Male",55,"55-64","Other",30000,"Some college","Republican","Conservative","Approve",8
+"Male",61,"55-64","White",20000,"College degree","Republican","Conservative","Approve",7
+"Male",30,"25-34","White",65000,"Graduate degree","Independent","Conservative","Approve",7
+"Male",47,"45-54","Other",17000,"High school or less","Independent","Liberal","Neither approve nor disapprove",10
+"Male",80,"65+","White",150000,"College degree","Independent","Liberal","Disapprove",9
+"Female",46,"45-54","White",12000,"College degree","Republican","Moderate","Approve",5
+"Male",55,"55-64","Latino",100000,"Other","Democrat","Conservative","Approve",8
+"Male",58,"55-64","White",40000,"Graduate degree","Republican","Moderate","Approve",8
+"Female",60,"55-64","White",50000,"Some college","Independent","Other/None","Disapprove",9
+"Female",51,"45-54","Black",45000,"College degree","Independent","Moderate","Disapprove",5
+"Female",31,"25-34","White",20000,"Some college","Independent","Liberal","Disapprove",8
+"Male",55,"55-64","Asian",25000,"High school or less","Democrat","Moderate","Disapprove",5
+"Male",70,"65+","White",80000,"Graduate degree","Democrat","Moderate","Approve",4
+"Male",46,"45-54","White",40000,"College degree","Republican","Moderate","Approve",4
+"Female",68,"65+","White",60000,"College degree","Independent","Conservative","Disapprove",6
+"Female",52,"45-54","Other",500000,"Graduate degree","Democrat","Liberal","Disapprove",6
+"Male",53,"45-54","Latino",55000,"College degree","Republican","Moderate","Approve",10
+"Male",23,"18-24","White",20000,"Some college","Independent","Moderate","Neither approve nor disapprove",7
+"Male",80,"65+","White",40000,"Some college","Independent","Moderate","Disapprove",5
+"Male",54,"45-54","Latino",75000,"High school or less","Independent","Other/None","Approve",4
+"Male",83,"65+","White",11000,"Graduate degree","Democrat","Liberal","Disapprove",5
+"Female",75,"65+","White",70000,"College degree","Independent","Liberal","Disapprove",3
+"Female",62,"55-64","White",70000,"Graduate degree","Independent","Conservative","Neither approve nor disapprove",3
+"Male",70,"65+","White",90000,"Graduate degree","Republican","Conservative","Approve",5
+"Male",45,"45-54","White",70000,"Some college","Republican","Conservative","Approve",6
+"Male",62,"55-64","White",75000,"College degree","Republican","Conservative","Approve",7
