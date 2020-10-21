@@ -52,7 +52,7 @@ It is worth remembering that R is a standalone program that you could use; and v
 If you search in your program files you should find it:
 
 ```{r echo=FALSE, out.width="10%", fig.align='left'}
-knitr::include_graphics("images/rlogo.jpg")
+knitr::include_graphics("rlogo.jpg")
 ```
 
 
@@ -61,7 +61,7 @@ Opening R you see a very old fashioned, and quite intimidating interface! There 
 You can see a console window in which you can run write and run commands. So I could try and see if 2+2 still equals 4:
 
 ```{r echo=FALSE, out.width="90%", fig.align='center'}
-knitr::include_graphics("images/Rinterface.jpg")
+knitr::include_graphics("Rinterface.jpg")
 ```
 
 
@@ -90,7 +90,7 @@ And if you then open this up in RStudio (Using the menu system: File->Open File)
 Once opened, your window should look something like this
 
 ```{r echo=FALSE, out.width="90%", fig.align='center'}
-knitr::include_graphics("images/Window.jpg")
+knitr::include_graphics("Window.jpg")
 ```
 
 
