@@ -61,7 +61,7 @@ Opening R you see a very old fashioned, and quite intimidating interface! There 
 You can see a console window in which you can run write and run commands. So I could try and see if 2+2 still equals 4:
 
 ```{r echo=FALSE, out.width="90%", fig.align='center'}
-knitr::include_graphics("images/Rinterface.jpg")
+knitr::include_graphics("images/Rinterface.JPG")
 ```
 
 
@@ -90,7 +90,7 @@ And if you then open this up in RStudio (Using the menu system: File->Open File)
 Once opened, your window should look something like this
 
 ```{r echo=FALSE, out.width="90%", fig.align='center'}
-knitr::include_graphics("images/Window.jpg")
+knitr::include_graphics("images/Window.JPG")
 ```
 
 
@@ -101,7 +101,7 @@ If you look at the RMD (R Markdown) file containing the solutions you can see tw
 Pressing the green button to the right of the chunk of code will run the code. The output will then appear directly below the code within the RMD document.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("images/RunningCode.jpg")
+knitr::include_graphics("images/RunningCode.JPG")
 ```
 
 
@@ -111,7 +111,7 @@ Make good use of the spaces between the chunks of code! This is extremely useful
 When you work down to the bottom of the solutions you will reach the examples where objects were created to solve problems. As you run these lines you will see things start to appear in the environment window, showing you all of the user created objects produced in this R session.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("images/objects in environment.jpg")
+knitr::include_graphics("images/objects in environment.JPG")
 ```
 
 
@@ -134,7 +134,7 @@ As the file pane should now be showing you the folder where you extracted the mo
 When you do this you will probably see a prompt at the top of the RMD window telling you that the ggplot2 package is used in this script, but has not been installed. 
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("images/ggplot2 not installed.jpg")
+knitr::include_graphics("images/ggplot2 not installed.JPG")
 ```
 
 
@@ -157,7 +157,7 @@ Make sure you work through sequentially. Loading the packages and the data first
 And if you click on it within that environment pane, it will open a (non-editable) spreadsheet like interface to view the data.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("images/viewer.jpg")
+knitr::include_graphics("images/viewer.JPG")
 ```
 
 
@@ -174,7 +174,7 @@ When writing your own markdown files there are a few key points to remember:
 One of the great things about using R markdown files, is how easy it is to export results outside of R. As long as you have followed my key points 1->4 above, then you should be able to easily convert all of your output and all of your text into a beautiful report, in your choice of format (PDF/Word/HTML) by simply pressing the knit button at the top of the window and selecting the output format. You will always be prompted to save your document, if there are unsaved changes, before any output is made. 
 
 ```{r echo=FALSE, out.width="40%", fig.align='left'}
-knitr::include_graphics("images/knit.jpg")
+knitr::include_graphics("images/knit.JPG")
 ```
 
 
