@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 ## Module 1:  Exercises
 
 (Note - these solutions contain embedded latex code for creating the mathematical formulae. Whenever you see the $ $ symbols in the main text this denotes some latex code. If you hover over it you will see the formula displayed as it would appear when compiled. So dont worry if this looks odd - this is not R code, and you can learn latex on another course!)
@@ -72,7 +77,7 @@ Then, you will need to write some code to convert an angle in degrees to an angl
 Then write the code to calculate the range I would expect my object to be projected if initial velocity was 5$m/s$, the angle of projection was 45 degrees and we were on Earth, so the gravity was equal to 9.8$m/s^2$
 
 
-#Answer 3
+### Answer 3
 
 I first will need to create constants using the assign operator `<-` as specified in the question.
 
@@ -95,7 +100,7 @@ theta_radian<-theta*pi/180
 Now I want to see what happens when I modify the angle. Instead of a single number, replace theta with several numbers to see how the range varies - I am interested in seeing the results for angles of 30, 35, 40, 45 and 50 degrees.
 
 
-##Answer 3b
+### Answer 3b
 
 We will use the `c()` to provide multiple angles to the theta object. We do not need to change any other part of the code other than theta.
 
@@ -117,7 +122,7 @@ You should see that the distance is furthest for an angle of 45 degrees. From my
 A task I am sure you remember from school is to solve a quadratic equation using the formula $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$.
 Write some R code to find the two values of x when $x^2-9x+19=0$ . As a reminder, in the quadratic equation formula from this particular example `a` would be 1; `b` would be -9 and `c` would be 19
 
-###Answer 4
+### Answer 4
 
 I am going to write this in general terms, similar to question 3, so that if i wanted to change my code for a different formula later, then i could. However, I didn't explicitly ask you to do that, so if you directly plugged in 1, -9 and 19 into a formula this would still be fine.
 
