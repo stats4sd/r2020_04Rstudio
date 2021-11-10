@@ -27,6 +27,8 @@ This module is a little different to the previous three modules - there won't be
 
 There are a series of great video resources going along with this session... but we didn't produce these ourselves. Rather than reinventing the wheel here, we are referring to a series of videos by the statistician Andy Field. The full resource he put together for getting started with RStudio can be found <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started" target="_blank">here.</a>
 
+Note: These videos are somewhat out of date relative to more recent versions of R. He is using 3.6.1 while we are now up to 4.1.2. However many of the same features apply and are still relevant. 
+
 
 ## Installing R and RStudio
 
@@ -93,6 +95,13 @@ Once opened, your window should look something like this
 knitr::include_graphics("images/Window.JPG")
 ```
 
+Here you will see four panes.
+
+*   Top left - this is where any opened files/objects (scripts/datasets etc.) will be displayed
+*   Bottom left - This is the console window, by default this is where you can type in commands, run code and where output would be displayed. However we generally work without this
+*   Top right - this is the environment pane where all of your stored objects will be listed.
+*   Bottom right - this is a multi-purpose pane where you can open and view files, view generated plots, find/install/update packages and access the help menus. You can access the help menu of any function by typing `?functionname` into the console.
+
 
 One of the first things I would suggest doing is minimising the console window. We never want to write commands in the console window directly - always use some form of a script file so that you can keep a track of all of the commands you are writing. It's important to make sure our work is reproducible, that errors can be easily identified and fixed, and that we can easily update and build upon what we have done so far.
 
@@ -103,8 +112,6 @@ Pressing the green button to the right of the chunk of code will run the code. T
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
 knitr::include_graphics("images/RunningCode.JPG")
 ```
-
-
 
 Make good use of the spaces between the chunks of code! This is extremely useful for you to add comments as you work through your analysis - explaining the logic behind particular steps, or reminding yourself of key pieces of information.
 
