@@ -102,8 +102,7 @@ Here you will see four panes.
 *   Top right - this is the environment pane where all of your stored objects will be listed.
 *   Bottom right - this is a multi-purpose pane where you can open and view files, view generated plots, find/install/update packages and access the help menus. You can access the help menu of any function by typing `?functionname` into the console.
 
-
-One of the first things I would suggest doing is minimising the console window. We never want to write commands in the console window directly - always use some form of a script file so that you can keep a track of all of the commands you are writing. It's important to make sure our work is reproducible, that errors can be easily identified and fixed, and that we can easily update and build upon what we have done so far.
+One of the first things I would suggest doing is minimising the console window. We never want to write commands in the console window directly - always use some form= of a script file so that you can keep a track of all of the commands you are writing. It's important to make sure our work is reproducible, that errors can be easily identified and fixed, and that we can easily update and build upon what we have done so far.
 
 If you look at the RMD (R Markdown) file containing the solutions you can see two distinct types of content on the page. You have text - where you can write whatever you like. And you have 'chunks' of R code, where you can only write valid R code.
 
@@ -121,7 +120,6 @@ When you work down to the bottom of the solutions you will reach the examples wh
 knitr::include_graphics("images/objects in environment.JPG")
 ```
 
-
 ## Working with projects
 
 You can download the solutions for Module 2 in RMD format, and the data file used, in CSV format [here](https://github.com/stats4sd/r2020_04Rstudio/raw/main/Module-2-Solutions.zip)
@@ -130,9 +128,17 @@ This is a good opportunity to learn about working with project files, importing 
 
 First of all - we should start by extracting the contents of that zip file into a sensible folder somewhere on your computer. 
 
-Then we can create a new project in RStudio (File->New Project) and setting this to an "Existing Folder" - the folder where you just extracted these files to. As explained in the video, projects are a really useful way of keeping your work organised, and making it easy to link to input data files and store output files in a coherent workflow.
+Then we can create a new project in RStudio (File->New Project) and setting this to an "Existing Directory" - the folder where you just extracted these files to. Preferably keep the name of this project as something simple. As explained in the video, projects are a really useful way of keeping your work organised, and making it easy to link to input data files and store output files in a coherent workflow. They save the hassle of having to constantly working with overly long file paths and changing your working directory.
 
-In the files pane, you should now see that this has navigated to the folder you just assigned the project to. It will also create a new .RProj file, which is the R project file. If you go away from RStudio, and come back another time you can reload your session exactly where you left it by opening this .RProj file. The project file automatically saves as you work. There is also a project menu in the top right corner which will let you switch between recently used projects, or create new projects.
+In the files pane, you should now see that this has navigated to the folder you just assigned the project to. It will also create a new .RProj file, which is the R project file. If you go away from RStudio, and come back another time you can reload your session exactly where you left it by opening this .RProj file. Opening this file will also automatically set your working directory to the folder in which the project is contained. The project file automatically saves as you work. There is also a project menu in the top right corner which will let you switch between recently used projects, or create new projects.
+
+Project files are especially useful for when working in collaborative projects or when switching between machines so that you can keep any file path references consistent and not have to potentially change them.
+
+When working with rstudio projects it is then useful to maintain a consistent data management system. As mentioned in the videos, he tends to keep a system of separate folders for data, documents images etc. For instance here is an example of the project folder for a current bit of work of mine. This goes far beyond the type of file structure we will need during this course but you may wish to take note for your future own projects such as PHD work.
+
+```{r echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/project structure.JPG")
+```
 
 As the file pane should now be showing you the folder where you extracted the module 2 solutions, you should be able to open it by just clicking on it.
 
@@ -144,10 +150,11 @@ When you do this you will probably see a prompt at the top of the RMD window tel
 knitr::include_graphics("images/ggplot2 not installed.JPG")
 ```
 
-
 You will see this message when your file contains a call to `library()` but the package inside that function is not installed. 
 
 To install ggplot2 you can then click on the install button at the top of your page and this will then connect to the CRAN repository to download it. Check the final message which appears. If you see something which ends with 'success' then the package has installed correctly! If you see an error message after trying to install a package then you have run into an issue. Don't be afraid to ask for help if you come across issues in this process for package installation at first, as there can sometimes be firewall, or other compatibility issues, which can be resolved with a bit of technical support.
+
+Ordinarily when you wish to install a package you can do so either directly using code `install.packages("name of package")` or by navigating the packages to the bottom right of the rstudio window, clicking install and then searching for the package. As mentioned in the video, it is best not to use the code option within an rmakdown file as otherwise this code will be run repeatedly when the markdown file is turned into a document. Rather if you use code, best to write this into the console.
 
 You can watch the video about installing and loading packages here:
 <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-installing-and-loading-packages" target="_blank">Installing and loading packages</a>
@@ -158,8 +165,8 @@ The video introduction for writing R scripts can be found here:
 <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-r-markdown" target="_blank">R Markdown</a>
 
 If you have set the project file, and installed ggplot you should now be able to go through the solutions file and run each of the chunks of code to see the 'solved' answers.
-Make sure you work through sequentially. Loading the packages and the data first, otherwise the later steps will not run. You can see from the first chunk a new function `read.csv` being used to read the data file in. We will learn more about reading in data in the second part of this module, but for now you can trust that, as long as you set up your project correctly, this line will read in the datafile and store it in R as an object called Pulse. When you run this line you should see it appear in your environment pane.
 
+Make sure you work through sequentially. Loading the packages and the data first, otherwise the later steps will not run. You can see from the first chunk a new function `read.csv` being used to read the data file in. We will learn more about reading in data in the second part of this module, but for now you can trust that, as long as you set up your project correctly, this line will read in the datafile and store it in R as an object called Pulse. When you run this line you should see it appear in your environment pane.
 
 And if you click on it within that environment pane, it will open a (non-editable) spreadsheet like interface to view the data.
 
