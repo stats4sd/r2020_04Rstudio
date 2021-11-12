@@ -174,14 +174,13 @@ And if you click on it within that environment pane, it will open a (non-editabl
 knitr::include_graphics("images/viewer.JPG")
 ```
 
-
 When writing your own markdown files there are a few key points to remember:
 
 1. Work sequentially! Always start by loading libraries and data; and put data manipulation steps before moving into analysis.
 
 2. Unless you are sharing with someone else to try to resolve an error, don't keep any code that you couldn't get to work within the document. We would like to have clear organisation of our commands, and not have things included that don't work. But remember for those things...
 
-3. Use the areas around the code chunks to write explanations and comments about what you are doing, and why you are doing it. Particularly if you have come across something new or exciting. Or (following from pt 2) if you get stuck- you can write comments about your problems when sharing. Your code may make perfect sense to you now - but when you come back next week, or next month... or next year, it might not make so much sense then.
+3. Use the areas around the code chunks to write explanations and comments about what you are doing, and why you are doing it. Particularly if you have come across something new or exciting. Or (following from pt 2) if you get stuck- you can write comments about your problems when sharing. Your code may make perfect sense to you now - but when you come back next week, or next month... or next year, it might not make so much sense then. Additionally this text can be formatted using the markdown language, see the markdown cheat sheet for more information <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf"_blank">here</a>
 
 4. Be careful about breaking the formatting style of the code chunks, by accidentally modifying or deleting the way they appear. It is safer to use the "Insert->R" button from the top right to add in chunks rather than try to write these out, or copy them.
  
@@ -194,9 +193,7 @@ knitr::include_graphics("images/knit.JPG")
 
 And the first time you do this you will probably be asked to install some libraries within R. Try it now using either of the solutions RMD files that you have downloaded, and should still have open in RStudio.
 
-
 There are a lot of ways to improve on the default appearance of your output, but going in detail to this is a little beyond the scope the course. There are some guides in the resources section of the workbook which may help you if you are interested in learning more.
-
 
 You may see online people using the .R format script file, instead of the .RMD format markdown file. This is an older format for writing R scripts which does not contain any of the interactive features or the ability to write and format text outside of R commands. When writing your own files we strongly recommend using the RMD format. The RMD file is specific to RStudio - so if you do ever come across a strange person who uses R but not RStudio (they do exist, but are something of an endangered species!) they might prefer to use the .R script file instead of the .RMD markdown file. When you become more of an experienced R user, you may also find .R script files useful when you are writing code to create functions or applications, rather than writing code for working with your own data.
 
