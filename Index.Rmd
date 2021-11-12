@@ -130,6 +130,8 @@ First of all - we should start by extracting the contents of that zip file into 
 
 Then we can create a new project in RStudio (File->New Project) and setting this to an "Existing Directory" - the folder where you just extracted these files to. Preferably keep the name of this project as something simple. As explained in the video, projects are a really useful way of keeping your work organised, and making it easy to link to input data files and store output files in a coherent workflow. They save the hassle of having to constantly working with overly long file paths and changing your working directory.
 
+In the video you will have been shown how to make a project from scratch, the reason we are doing this different and setting to an existing directory is because we are of course already supplying materials to populate your project. The choice will likely depend on where you are in a given project. If this r project is to up and running straight away then can create a new one, if it comes in later with much of the data/docs in place then can set to an existing directory.
+
 In the files pane, you should now see that this has navigated to the folder you just assigned the project to. It will also create a new .RProj file, which is the R project file. If you go away from RStudio, and come back another time you can reload your session exactly where you left it by opening this .RProj file. Opening this file will also automatically set your working directory to the folder in which the project is contained. The project file automatically saves as you work. There is also a project menu in the top right corner which will let you switch between recently used projects, or create new projects.
 
 Project files are especially useful for when working in collaborative projects or when switching between machines so that you can keep any file path references consistent and not have to potentially change them.
@@ -199,8 +201,6 @@ You may see online people using the .R format script file, instead of the .RMD f
 
 In the next workbook we will cover importing data into R, and you can then start building your own RMD files from scratch to interact with R!
 
-
-
 ## Appendix:  Useful reference links  
 
 RStudio website:<a href="https://rstudio.com/" target="_blank">https://rstudio.com/   </a> 
@@ -211,7 +211,7 @@ Andy Field's Getting started in R and RStudio:<a href="http://milton-the-cat.roc
 
 R Markdown documentation:<a href="https://rmarkdown.rstudio.com/lesson-1.html" target="_blank">https://rmarkdown.rstudio.com/lesson-1.html   </a> 
 
-RStudio CheatSheet:<a href="https://rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf" target="_blank">https://rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf   </a>
+RStudio CheatSheet:<a href="https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf" target="_blank">https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf   </a>
 
 R Markdown CheatSheet:<a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank">https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf   </a>
 
