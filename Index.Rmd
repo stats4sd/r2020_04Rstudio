@@ -139,7 +139,7 @@ Project files are especially useful for when working in collaborative projects o
 When working with rstudio projects it is then useful to maintain a consistent data management system. As mentioned in the videos, he tends to keep a system of separate folders for data, documents images etc. For instance here is an example of the project folder for a current bit of work of mine. This goes far beyond the type of file structure we will need during this course but you may wish to take note for your future own projects such as PHD work.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("images/project structure.JPG")
+knitr::include_graphics("images/project structure.jpg")
 ```
 
 As the file pane should now be showing you the folder where you extracted the module 2 solutions, you should be able to open it by just clicking on it.
