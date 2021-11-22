@@ -1,5 +1,5 @@
 ---
-title: "Using Rstudio and R Markdown files"
+title: "Using RStudio and R Markdown files"
 output: 
   learnr::tutorial:
     progressive: true
@@ -36,7 +36,7 @@ Both R and RStudio are open source software tools, so these can be downloaded fr
 
 Even if you have prior installations of R or RStudio on your computer - please ensure you download and install the most recent versions of both programs. R and RStudio are both updated on a very regular basis, and some of the features we may highlight in this course may not be available if you are using an older version. 
 
-<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-installing-r-and-rstudio" target="_blank">Video covering the installation process</a>
+<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-installing-r-and-RStudio" target="_blank">Video covering the installation process</a>
 
 The first thing to install is the most recent version of R for your operating system:
 <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">Download R for Windows</a>
@@ -44,7 +44,7 @@ The first thing to install is the most recent version of R for your operating sy
 <a href="https://cran.r-project.org/bin/macosx/" target="_blank">Download R for Mac</a>
 
 Once you have completed the installation of R you can download RStudio, the link below should provide the recommended link to download based on your operating system.
-<a href="https://rstudio.com/products/rstudio/download/#download" target="_blank">Download RStudio</a>
+<a href="https://RStudio.com/products/RStudio/download/#download" target="_blank">Download RStudio</a>
 
 You should not need to change any of the default settings as you work through the installation process. If you are having any issues with the downloading and installation process please make sure that you have administrator rights on the computer you are working on. Please remember that you can use the help forum at any time if you are struggling with these steps.
 
@@ -84,7 +84,7 @@ I'd suggest watching this back-to-back with the next video in the sequence, whic
 <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-working-in-rstudio" target="_blank">Working in RStudio</a>
 
 
-Rather than creating a new file from scratch right now, you can download the solutions from Module 1 as a workbook [here](https://github.com/stats4sd/r2020_04Rstudio/raw/main/Module-1-Solutions.zip). 
+Rather than creating a new file from scratch right now, you can download the solutions from Module 1 as a workbook [here](https://github.com/stats4sd/r2020_04RStudio/raw/main/Module-1-Solutions.zip). 
 
 And if you then open this up in RStudio (Using the menu system: File->Open File) you can get an idea of how the interface works. 
 
@@ -122,7 +122,7 @@ knitr::include_graphics("images/objects in environment.JPG")
 
 ## Working with projects
 
-You can download the solutions for Module 2 in RMD format, and the data file used, in CSV format [here](https://github.com/stats4sd/r2020_04Rstudio/raw/main/Module-2-Solutions.zip)
+You can download the solutions for Module 2 in RMD format, and the data file used, in CSV format [here](https://github.com/stats4sd/r2020_04RStudio/raw/main/Module-2-Solutions.zip)
 
 This is a good opportunity to learn about working with project files, importing data, and installing and loading packages.
 
@@ -130,13 +130,13 @@ First of all - we should start by extracting the contents of that zip file into 
 
 Then we can create a new project in RStudio (File->New Project) and setting this to an "Existing Directory" - the folder where you just extracted these files to. Preferably keep the name of this project as something simple. As explained in the video, projects are a really useful way of keeping your work organised, and making it easy to link to input data files and store output files in a coherent workflow. They save the hassle of having to constantly working with overly long file paths and changing your working directory.
 
-In the video you will have been shown how to make a project from scratch, the reason we are doing this different and setting to an existing directory is because we are of course already supplying materials to populate your project. The choice will likely depend on where you are in a given project. If this r project is to up and running straight away then can create a new one, if it comes in later with much of the data/docs in place then can set to an existing directory.
+In the video you will have been shown how to make a project from scratch, the reason we are doing this different and setting to an existing directory is because we are of course already supplying materials to populate your project. The choice will likely depend on where you are in a given project. If this R project is needed to be up and running straight away then can create a new one, if it is not needed until much later with much of the data/docs in place then can be set to an existing directory.
 
 In the files pane, you should now see that this has navigated to the folder you just assigned the project to. It will also create a new .RProj file, which is the R project file. If you go away from RStudio, and come back another time you can reload your session exactly where you left it by opening this .RProj file. Opening this file will also automatically set your working directory to the folder in which the project is contained. The project file automatically saves as you work. There is also a project menu in the top right corner which will let you switch between recently used projects, or create new projects.
 
 Project files are especially useful for when working in collaborative projects or when switching between machines so that you can keep any file path references consistent and not have to potentially change them.
 
-When working with rstudio projects it is then useful to maintain a consistent data management system. As mentioned in the videos, he tends to keep a system of separate folders for data, documents images etc. For instance here is an example of the project folder for a current bit of work of mine. This goes far beyond the type of file structure we will need during this course but you may wish to take note for your future own projects such as PHD work.
+When working with RStudio projects it is then useful to maintain a consistent data management system. As mentioned in the videos, he tends to keep a system of separate folders for data, documents images etc. For instance here is an example of the project folder for a current bit of work of mine. This goes far beyond the type of file structure we will need during this course but you may wish to take note for your future own projects such as PHD work.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
 knitr::include_graphics("images/project structure.jpg")
@@ -156,7 +156,7 @@ You will see this message when your file contains a call to `library()` but the 
 
 To install ggplot2 you can then click on the install button at the top of your page and this will then connect to the CRAN repository to download it. Check the final message which appears. If you see something which ends with 'success' then the package has installed correctly! If you see an error message after trying to install a package then you have run into an issue. Don't be afraid to ask for help if you come across issues in this process for package installation at first, as there can sometimes be firewall, or other compatibility issues, which can be resolved with a bit of technical support.
 
-Ordinarily when you wish to install a package you can do so either directly using code `install.packages("name of package")` or by navigating the packages to the bottom right of the rstudio window, clicking install and then searching for the package. As mentioned in the video, it is best not to use the code option within an rmakdown file as otherwise this code will be run repeatedly when the markdown file is turned into a document. Rather if you use code, best to write this into the console.
+Ordinarily when you wish to install a package you can do so either directly using code `install.packages("name of package")` or by navigating the packages to the bottom right of the RStudio window, clicking install and then searching for the package. As mentioned in the video, it is best not to use the code option within a makdown file as otherwise this code will be run repeatedly when the markdown file is turned into a document. Rather if you use code, best to write this into the console.
 
 You can watch the video about installing and loading packages here:
 <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-installing-and-loading-packages" target="_blank">Installing and loading packages</a>
@@ -182,7 +182,7 @@ When writing your own markdown files there are a few key points to remember:
 
 2. Unless you are sharing with someone else to try to resolve an error, don't keep any code that you couldn't get to work within the document. We would like to have clear organisation of our commands, and not have things included that don't work. But remember for those things...
 
-3. Use the areas around the code chunks to write explanations and comments about what you are doing, and why you are doing it. Particularly if you have come across something new or exciting. Or (following from pt 2) if you get stuck- you can write comments about your problems when sharing. Your code may make perfect sense to you now - but when you come back next week, or next month... or next year, it might not make so much sense then. Additionally this text can be formatted using the markdown language, see the markdown cheat sheet for more information <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf"_blank">here</a>
+3. Use the areas around the code chunks to write explanations and comments about what you are doing, and why you are doing it. Particularly if you have come across something new or exciting. Or (following from pt 2) if you get stuck- you can write comments about your problems when sharing. Your code may make perfect sense to you now - but when you come back next week, or next month... or next year, it might not make so much sense then. Additionally this text can be formatted using the markdown language, see the markdown cheat sheet for more information <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank"> here </a>
 
 4. Be careful about breaking the formatting style of the code chunks, by accidentally modifying or deleting the way they appear. It is safer to use the "Insert->R" button from the top right to add in chunks rather than try to write these out, or copy them.
  
