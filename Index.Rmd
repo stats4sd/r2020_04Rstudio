@@ -7,9 +7,8 @@ output:
     df_print: default
 runtime: shiny_prerendered
 description: >
-  Learn about the basic syntax of R.
+  Introduction to RStudio and Using Scripting
 ---
-
 
 ```{r setup, include=FALSE}
 library(learnr)
@@ -18,47 +17,59 @@ library(tidyverse)
 tutorial_options(exercise.timelimit = 10)
 ```
 
-
 ## Overview
 
-In this session, we will guide you through the process of setting up R and RStudio on your computer, and start familiarising yourself with good practice for using RStudio. We will cover installing packages, using projects, and writing scripts using the markdown format. Now that you have learnt some R code already in the first three sessions, hopefully it will become a little bit clearer how you can then interact with RStudio for your own work, and how and why these features are useful. 
+In this session, we will guide you through the process of setting up R and RStudio on your computer, and introduce you some useful tips and good practice for using RStudio.
 
-This module is a little different to the previous three modules - there won't be any interactive code windows in this workbook. Instead you will be working through this workbook to provide steps which cover the installation and orientation of R and RStudio on your own machine.
+The main topics we will cover:
 
-There are a series of great video resources going along with this session... but we didn't produce these ourselves. Rather than reinventing the wheel here, we are referring to a series of videos by the statistician Andy Field. The full resource he put together for getting started with RStudio can be found <a href="http://milton-the-cat.rocks/learnr/r/r_getting_started" target="_blank">here.</a>
+-   Installing R and RStudio
 
-Note: These videos are somewhat out of date relative to more recent versions of R. He is using 3.6.1 while we are now up to 4.1.2. However many of the same features apply and are still relevant. 
+-   What is RStudio?
 
+-   Overview of RStudio layout and menus
+
+-   Using the markdown file format to write script files
+
+-   Installing packages
+
+-   Using project files
+
+-   Importing data
+
+-   Exporting results
+
+This module is a little different to the previous three modules - there won't be any interactive code windows to fill in this workbook - instead there will be instructions and screenshots that you should try to replicate on your own computer.
+
+The video for this module gives you a brief tour of these features:
 
 ## Installing R and RStudio
 
-Both R and RStudio are open source software tools, so these can be downloaded from the internet for free, forever. 
+Both R and RStudio are open source software tools, and these can be downloaded for free. Versions are compatible with nearly all operating systems.
 
-Even if you have prior installations of R or RStudio on your computer - please ensure you download and install the most recent versions of both programs. R and RStudio are both updated on a very regular basis, and some of the features we may highlight in this course may not be available if you are using an older version. 
+Even if you have prior installations of R or RStudio on your computer - please ensure you download and install the most recent versions of both programs. R and RStudio are both under constant active development and updated on a regular basis. Some of the RStudio features we talk about, or functions we cover, in this course may not be available if you are using an older version of R or RStudio.
 
-<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-installing-r-and-RStudio" target="_blank">Video covering the installation process</a>
-
-The first thing to install is the most recent version of R for your operating system:
-<a href="https://cran.r-project.org/bin/windows/base/" target="_blank">Download R for Windows</a>
+The first thing to install is the most recent version of R for your operating system: <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">Download R for Windows</a>
 
 <a href="https://cran.r-project.org/bin/macosx/" target="_blank">Download R for Mac</a>
 
-Once you have completed the installation of R you can download RStudio, the link below should provide the recommended link to download based on your operating system.
-<a href="https://RStudio.com/products/RStudio/download/#download" target="_blank">Download RStudio</a>
+Once you have completed the installation of R you can download RStudio, the link below should provide the recommended link to download based on your operating system. <a href="https://RStudio.com/products/RStudio/download/#download" target="_blank">Download RStudio</a>
 
-You should not need to change any of the default settings as you work through the installation process. If you are having any issues with the downloading and installation process please make sure that you have administrator rights on the computer you are working on. Please remember that you can use the help forum at any time if you are struggling with these steps.
+(Note: RStudio is, as of September 2022, both the name of the software and the name of the organisation who makes the software. From October 2022 the organisation is re-branding as 'Posit', but the name of the software will remain as 'RStudio'. At the time of writing this has not yet changed - we expect that the link above will remain valid but will redirect to a page on <https://posit.co> where you can download RStudio, so do not panic if you find yourself redirected to that site instead!).
 
-## Overview of R
+You should not need to change any of the default settings as you work through the installation process. If you are having any issues with the downloading and installation process please make sure that you have administrator rights on the computer you are working on.
 
-It is worth remembering that R is a standalone program that you could use; and very occasionally when you look up resources online you will see people using R without using RStudio. This is something that you will never need to do. But it might be useful to open up R now to see how things used to be for R users, before RStudio came along.
-If you search in your program files you should find it:
+If you are struggling to complete the installation process then please ask in the technical support or help forums for these modules.
+
+## What is RStudio?
+
+Before getting into RStudio - it is worth taking a quick step back to understand what exactly "R" itself is. Usually when we talk about R we mean the language itself - but when you downloaded and installed this you may have seen that R is a standalone program in itself that you could use. Very occasionally when you look up resources online you will see people using R without using RStudio. If you search in your program files you should find it:
 
 ```{r echo=FALSE, out.width="10%", fig.align='left'}
 knitr::include_graphics("images/rlogo.jpg")
 ```
 
-
-Opening R you see a very old fashioned, and quite intimidating interface! There are very few features within the R GUI to help you get started, or optimise your workflow at all.
+Opening R you see a very old fashioned, and quite intimidating interface! There are very few features within the R GUI to help you get started, or to optimise your workflow at all.
 
 You can see a console window in which you can run write and run commands. So I could try and see if 2+2 still equals 4:
 
@@ -66,28 +77,33 @@ You can see a console window in which you can run write and run commands. So I c
 knitr::include_graphics("images/Rinterface.JPG")
 ```
 
+And I can see that R is at least functioning correctly as a calculator.
 
-And I can see that R is at least functioning correctly.
+The general user un-friendliness is what led to the development of IDEs (Interactive Development Environment) for R, to help make working with R easier. RStudio was not the first of these, but over time it has developed to become by far the dominant tool used by those working with R (the language) on a regular basis. In a 2021 survey 83% of R users indicated they use RStudio as the way in which they interacted with R (<https://www.jetbrains.com/lp/devecosystem-2021/r/>). Looking into the methodology, and given the skew in that sample towards software developers rather than researchers, I would actually suspect that to be an underestimate!
 
-The general user un-friendliness is what led to many people making IDE (Interactive Development Environment) tools, to make working with R easier. RStudio was not the first of these, but over time it has become the only method for working with R for the majority of R users. 
+You can now close down the "R" window.
 
-You can now close down R and head straight over to RStudio.
+## Overview of RStudio Layout
 
-## Overview of RStudio
+First let's open up RStudio. It should look something like this:
 
-Andy Field's video gives you an overview of RStudio that should help you orientate yourself as a new user to the purpose of each of the different panes within the RStudio environment.
+```{r echo=FALSE, out.width="90%", fig.align='center'}
+knitr::include_graphics("images/empty.PNG")
+```
 
-<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-a-quick-tour-of-r-studio" target="_blank">A quick tour of R Studio</a>
+Here you will see three main "panes" initally.
 
-I'd suggest watching this back-to-back with the next video in the sequence, which starts moving into more specifics about how you can get started with some work!
+-   Left hand side: This is the console window, by default this is where you can type in commands, run code and where output would be displayed. You will notice this part looks extremely similar to what you saw when you opened up "R" the standalone software application earlier. Effectively this is exactly the same thing - and now everything else covered from this point on will be specific to only RStudio.
+-   Top right - by default this shows the "environment" pane. This is where all of your stored objects will be listed. You can also see a history of your recently submitted commands, a list of open connections to external data sources, and some built in tutorials that could help you on specific topics.
+-   Bottom right - this is also a multi-purpose pane where by default it links to the file manager so you can open and view files within R. If you create plots then these will appear in the Plots tab; although interactive plots or other interactive output will appear in the Viewer tab and if you create any powerpoint style presentations these will appear in the Presentation tab. The Packages tab shows a list of the currently installed packages, and allows you to install new packages or update existing packages. You can also see a point-and-click access to the help menus. This is another way to access the same help menus we mentioned in module 1 which can appear by typing `?functionname` into the console.
 
-<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-working-in-rstudio" target="_blank">Working in RStudio</a>
+It is possible to totally re-organise the layourt of these panes if you want - but for now I will assume you are happy with these default layouts.
+
+Rather than starting straight from from scratch right now, let's work with a pre-existing set of file which should hopefully look familiar - the solutions from Module 1 of this course. These can be downloaded <a href="https://raw.githubusercontent.com/stats4sd/R_Course_Resources/main/Module%201%20Solutions.Rmd" download>from this link. Right click and select "Save Link As" to download to a sensible folder on your computer </a>
 
 
-Rather than creating a new file from scratch right now, you can download the solutions from Module 1 as a workbook [here](https://github.com/stats4sd/r2020_04RStudio/raw/main/Module-1-Solutions.zip). 
 
-And if you then open this up in RStudio (Using the menu system: File->Open File) you can get an idea of how the interface works. 
-
+Open the file "Module 1 Solutions.RMD" in RStudio, using the menu system within RStudio by selecting File (in the top left corner) and then Open File.
 
 Once opened, your window should look something like this
 
@@ -95,124 +111,156 @@ Once opened, your window should look something like this
 knitr::include_graphics("images/Window.JPG")
 ```
 
-Here you will see four panes.
+Now you will see four panes - and this is usually what you will have when working with R Studio. The console has dropped to the bottom left and the scripting window has appeared in the top left.
 
-*   Top left - this is where any opened files/objects (scripts/datasets etc.) will be displayed
-*   Bottom left - This is the console window, by default this is where you can type in commands, run code and where output would be displayed. However we generally work without this
-*   Top right - this is the environment pane where all of your stored objects will be listed.
-*   Bottom right - this is a multi-purpose pane where you can open and view files, view generated plots, find/install/update packages and access the help menus. You can access the help menu of any function by typing `?functionname` into the console.
+One of the first things I would generally suggest doing is minimising the console window. We never want to write commands in the console window directly - as these are just temporary. Always use some form of a script file so that you can keep a track of all of the commands you are writing. It's important in research to make sure our work is reproducible - and using a script allows us to easily identify and fix errors can be easily, build upon existing analysis, or run the same analysis again using different data. Let's look at this now in more detail.
 
-One of the first things I would suggest doing is minimising the console window. We never want to write commands in the console window directly - always use some form= of a script file so that you can keep a track of all of the commands you are writing. It's important to make sure our work is reproducible, that errors can be easily identified and fixed, and that we can easily update and build upon what we have done so far.
+## R Markdown Files
 
-If you look at the RMD (R Markdown) file containing the solutions you can see two distinct types of content on the page. You have text - where you can write whatever you like. And you have 'chunks' of R code, where you can only write valid R code.
-
-Pressing the green button to the right of the chunk of code will run the code. The output will then appear directly below the code within the RMD document.
+Now let's take a look at the script file you have opened. format being using in this course is a .RMD (R Markdown) file. Within this format you can write notes and have interactive code chunks, with in-line output like you have been seeing with the online tutorials. Pressing the green 'play' button to the right of the chunk of code will run the code. The output will then appear directly below the code within the RMD document.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
 knitr::include_graphics("images/RunningCode.JPG")
 ```
 
-Make good use of the spaces between the chunks of code! This is extremely useful for you to add comments as you work through your analysis - explaining the logic behind particular steps, or reminding yourself of key pieces of information.
+Make good use of the spaces between the chunks of code - you can write whatever you like in these spaces outside of the code chunks! This is extremely useful for you to add comments as you work through your analysis - explaining the logic behind particular steps, or reminding yourself of key pieces of information.
 
-When you work down to the bottom of the solutions you will reach the examples where objects were created to solve problems. As you run these lines you will see things start to appear in the environment window, showing you all of the user created objects produced in this R session.
+You can add in new R chunks anywhere in the markdown file - the easiest way to do this is to select the green "C" button in the top right corner of the script file and then select "R"
+
+```{r echo=FALSE, out.width="70%", out.width="30%", fig.align='center'}
+knitr::include_graphics("images/newchunk.JPG")
+```
+
+*Exercise: Work your way through the solutions file and run all of the chunks of code. Notice that some of them will produce errors, and you will see how these errors and warnings are handled in the markdown file as you proceed.*
+
+When working on your own analyses there are a few important things to remember about creating script files:
+
+1.  Work sequentially! Make sure data is loaded at the beginning and be sure to put any data manipulation steps in before moving into analysis, otherwise you may end up with changes not being applied corrects.
+
+2.  Unless you are sharing your file with someone else to try to resolve an error, don't include all of your 'failed' attempts at writing code within the script file - only keep the code that works. We would like to have clear organisation of our commands, and not have things included that don't work.
+
+3.  Use the areas around the code chunks to write explanations and comments about what you are doing, and why you are doing it. Particularly if you have come across something new or exciting. Or (following from pt 2) if you get stuck- you can write the commands that are not working outside of code chunks and include notes about your problems. The code you are writing may make perfect sense to you right now - but when you come back next week, or next month... or next year, it might not make so much sense then.
+
+4.  Be careful about breaking the formatting style of the code chunks, by accidentally modifying or deleting the way they appear. It is safer to use the "Insert-\>R" button from the top right to add in chunks rather than try to write these out, or copy them.
+
+When you have worked down to the bottom of the solutions you will have reached the examples where objects were created to solve problems. So you should have seen things start to appear in the 'environment' pane, which will show you all of the user created objects produced in this R session.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
 knitr::include_graphics("images/objects in environment.JPG")
 ```
 
-## Working with projects
-
-You can download the solutions for Module 2 in RMD format, and the data file used, in CSV format [here](https://github.com/stats4sd/r2020_04RStudio/raw/main/Module-2-Solutions.zip)
-
-This is a good opportunity to learn about working with project files, importing data, and installing and loading packages.
-
-First of all - we should start by extracting the contents of that zip file into a sensible folder somewhere on your computer. 
-
-Then we can create a new project in RStudio (File->New Project) and setting this to an "Existing Directory" - the folder where you just extracted these files to. Preferably keep the name of this project as something simple. As explained in the video, projects are a really useful way of keeping your work organised, and making it easy to link to input data files and store output files in a coherent workflow. They save the hassle of having to constantly working with overly long file paths and changing your working directory.
-
-In the video you will have been shown how to make a project from scratch, the reason we are doing this different and setting to an existing directory is because we are of course already supplying materials to populate your project. The choice will likely depend on where you are in a given project. If this R project is needed to be up and running straight away then can create a new one, if it is not needed until much later with much of the data/docs in place then can be set to an existing directory.
-
-In the files pane, you should now see that this has navigated to the folder you just assigned the project to. It will also create a new .RProj file, which is the R project file. If you go away from RStudio, and come back another time you can reload your session exactly where you left it by opening this .RProj file. Opening this file will also automatically set your working directory to the folder in which the project is contained. The project file automatically saves as you work. There is also a project menu in the top right corner which will let you switch between recently used projects, or create new projects.
-
-Project files are especially useful for when working in collaborative projects or when switching between machines so that you can keep any file path references consistent and not have to potentially change them.
-
-When working with RStudio projects it is then useful to maintain a consistent data management system. As mentioned in the videos, he tends to keep a system of separate folders for data, documents images etc. For instance here is an example of the project folder for a current bit of work of mine. This goes far beyond the type of file structure we will need during this course but you may wish to take note for your future own projects such as PHD work.
+There are two kinds of object produced in this session - 'data' and 'values'. Notice that there is a blue button next to the `airquality` data. Clicking on the blue button will show you the column names, the class of each of the columns (integer, numeric, character) and the first few entries in each column.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("images/project structure.jpg")
+knitr::include_graphics("images/blue_button.JPG")
 ```
 
-As the file pane should now be showing you the folder where you extracted the module 2 solutions, you should be able to open it by just clicking on it.
-
-## Installing Packages
-
-When you do this you will probably see a prompt at the top of the RMD window telling you that the ggplot2 package is used in this script, but has not been installed. 
-
-```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("images/ggplot2 not installed.JPG")
-```
-
-You will see this message when your file contains a call to `library()` but the package inside that function is not installed. 
-
-To install ggplot2 you can then click on the install button at the top of your page and this will then connect to the CRAN repository to download it. Check the final message which appears. If you see something which ends with 'success' then the package has installed correctly! If you see an error message after trying to install a package then you have run into an issue. Don't be afraid to ask for help if you come across issues in this process for package installation at first, as there can sometimes be firewall, or other compatibility issues, which can be resolved with a bit of technical support.
-
-Ordinarily when you wish to install a package you can do so either directly using code `install.packages("name of package")` or by navigating the packages to the bottom right of the RStudio window, clicking install and then searching for the package. As mentioned in the video, it is best not to use the code option within a makdown file as otherwise this code will be run repeatedly when the markdown file is turned into a document. Rather if you use code, best to write this into the console.
-
-You can watch the video about installing and loading packages here:
-<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-installing-and-loading-packages" target="_blank">Installing and loading packages</a>
-
-## Markdown Files
-
-The video introduction for writing R scripts can be found here:
-<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-r-markdown" target="_blank">R Markdown</a>
-
-If you have set the project file, and installed ggplot you should now be able to go through the solutions file and run each of the chunks of code to see the 'solved' answers.
-
-Make sure you work through sequentially. Loading the packages and the data first, otherwise the later steps will not run. You can see from the first chunk a new function `read.csv` being used to read the data file in. We will learn more about reading in data in the second part of this module, but for now you can trust that, as long as you set up your project correctly, this line will read in the datafile and store it in R as an object called Pulse. When you run this line you should see it appear in your environment pane.
-
-And if you click on it within that environment pane, it will open a (non-editable) spreadsheet like interface to view the data.
+Clicking on the name of the dataset will open up a spreadsheet view that will let you explore the data - similar to how you could in excel. Although note that the data cannot be edited through this spreadsheet view.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
 knitr::include_graphics("images/viewer.JPG")
 ```
 
-When writing your own markdown files there are a few key points to remember:
+There are two other formats of script file it is also worth being aware of:
 
-1. Work sequentially! Always start by loading libraries and data; and put data manipulation steps before moving into analysis.
+The .R (R Script) format, which is a older and contains only commands - the output is not shown in line for the .R file, instead it goes to the console. containing the solutions you can see two distinct types of content on the page.
 
-2. Unless you are sharing with someone else to try to resolve an error, don't keep any code that you couldn't get to work within the document. We would like to have clear organisation of our commands, and not have things included that don't work. But remember for those things...
+The .QMD (Quarto) format, which is very similar to the .RMD format on the surface but is much newer. The main difference is that this format has better cross-language compatibility, if for example you start wanting to use Python and R in the same analysis, or more generally just use the same setup for coding in Python as you use for coding in R. Longer term this format may start to get more usage - but as of 2022 it is still new and not widely adopted, so we would recommend using the .RMD format as it is likely you will find it easier to get support for this in case of problems and in this course at least, we are only focused on running R code.
 
-3. Use the areas around the code chunks to write explanations and comments about what you are doing, and why you are doing it. Particularly if you have come across something new or exciting. Or (following from pt 2) if you get stuck- you can write comments about your problems when sharing. Your code may make perfect sense to you now - but when you come back next week, or next month... or next year, it might not make so much sense then. Additionally this text can be formatted using the markdown language, see the markdown cheat sheet for more information <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank"> here </a>
+## Installing Packages
 
-4. Be careful about breaking the formatting style of the code chunks, by accidentally modifying or deleting the way they appear. It is safer to use the "Insert->R" button from the top right to add in chunks rather than try to write these out, or copy them.
- 
-One of the great things about using R markdown files, is how easy it is to export results outside of R. As long as you have followed my key points 1->4 above, then you should be able to easily convert all of your output and all of your text into a beautiful report, in your choice of format (PDF/Word/HTML) by simply pressing the knit button at the top of the window and selecting the output format. You will always be prompted to save your document, if there are unsaved changes, before any output is made. 
+In modules 2 and 3 we used the packages `ggplot2` and `dplyr` for graphics and data manipulation. These are additional libraries, not included with the 'base' installation of R. If you are using R and RStudio for the first time these packages will not be available to you.
+
+There are two main ways of installing packages - let's look at one for `ggplot2` and another option for `dplyr`
+
+Option 1: Write a command
+
+Create a new R chunk within the existing .RMD file and write the command `install.packages`. The argument needed for this function is simply the name of the package you wish to install and then the package name in quotation marks.
+
+```{r echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/ggplot2.JPG")
+```
+
+Then running this command will download the package and install it on your computer.
+
+Check the final message which appears. If you see something which ends with 'success' then the package has installed correctly! If you see an error message after trying to install a package then you have run into an issue. Don't be afraid to ask for help if you come across issues in this process for package installation at first, as there can sometimes be firewall, or other compatibility issues, which can be resolved with a bit of technical support.
+
+The alternative option is to navigate to the packages tab in the bottom right pane and then click on the 'install' button. This will open a new menu where you can specify which packages you want to install. Let's use this method to install dplyr
+
+```{r echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/package_menu.JPG")
+```
+
+Just because we have installed our packages does not mean we can use them though! Maybe I want to apply what I learnt in Module 2 and make a scatter plot from the airquality data set.
+
+```{r echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/not_found.JPG")
+```
+
+Did I make a mistake in the code? Actually - no. Look at the error message; "could not find function ggplot".
+
+When you see this error it usually means one of two things: either you have made a spelling error or, like now, you have not loaded the library in which the function you are trying to use is stored. In this case I need to make sure I load the ggplot2 library so that I can have access to the ggplot command.
+
+We need to load any additional packages we have downloaded within our R session using the `library` command within every R session in which we plan on using it. But we only need to download and install the packages one time.
+
+So let's try my code again - but this time running `library(ggplot2`) directly before:
+
+```{r echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("images/ggplot_found.JPG")
+```
+
+It's usually good practice to load all libraries you use in a script file in a setup chunk as the very first thing you include in your R script.
+
+Once you have finished it is usually a good idea to save your script file - in a sensible folder with a sensible file name. Since you downloaded the module 1 solutions and then opened the file that had already been created if you were to save the file now, it would over-write the version you had previously downloaded. So it is probably a good idea to use Save-As and then create a new copy. Files can quickly start to build up when using RStudio - it is good to try to be organised and this is where project files can come in.
+
+## Working with projects
+
+Once you have saved any changes let's now move to a completely different task - thinking now about the solutions to Module 2. You can download a zip file containing the solutions for Module 2 in RMD format, and the data file used, in CSV format [here](https://github.com/stats4sd/r2020_04RStudio/raw/main/Module-2-Solutions.zip)
+
+First of all - we should start by extracting the contents of that zip file into a sensible folder somewhere on your computer.
+
+Then we can create a new project in RStudio (File-\>New Project) and setting this to an "Existing Directory" - the folder where you just extracted these files to. Since we have already got these files downloaded and organised we can set it to an existing directory, if we are starting truly from scratch then we would set it to a completely new folder. Preferably keep the name of this project as something simple.
+
+As explained in the video, projects are a really useful way of keeping your work organised, and making it easy to link to input data files and store output files in a coherent workflow. They save the hassle of having to constantly working with overly long file paths and changing your working directory.
+
+In the files pane in the bottom right, you should now see that this has navigated to the folder you just assigned the project to. It will also create a new .RProj file, which is the R project file. If you go away from RStudio, and come back another time you can reload your session exactly where you left it by opening this .RProj file. Opening this file will also automatically set your working directory to the folder in which the project is contained. The project file automatically saves as you work - once it is set up you almost don't even need to think about it again until you find yourself with a different project to work on! There is also a project menu in the top right corner which will let you switch between recently used projects, or create new projects. When working through the later modules of this course we would very strongly recommend that you set up project files to complete the exercises - this will make following the code much easier as you will be able to locate and import datasets much more easily.
+
+Project files are especially useful for when working in collaborative projects or when switching between machines so that you can keep any file path references consistent and not have to potentially change them. Writing import statements to specific file locations can quickly turn into horribly long lines of code - and they will only ever be specific to your computer so would have to be amended by anyone else you shared the code with.
+
+As the file pane should now be showing you the folder where you extracted the module 2 solutions, you should be able to open it by just clicking on it.
+
+If you have set the project file, and installed ggplot you should now be able to go through the solutions file and run each of the chunks of code to see the 'solved' answers.
+
+Make sure you work through the code for Module 2 sequentially. Loading the packages and the data first, otherwise the later steps will not run.
+
+## Importing Data
+
+You can see from the first chunk of the Module 2 solutions that we now introduce a new function `read.csv` being used to read the data file in. As long as you set up your project correctly, this line will read in the datafile and store it in R as an object called Pulse. When you run this line you should see it appear in your environment pane. Importing clean data saved in CSV format is easy!
+
+The next workbook for this module will cover what you need to do if you find yourself needing to import data from other sources, or that may not be so clean. A key point to understand is that the cleanliness and complexity of the structure of your data outside of R will effect how easy the data is to read in.
+
+## Exporting Results
+
+One of the great things about using R markdown files and R project files, is how easy it is to export results outside of R. If you have followed the advice in this module and installed all required packages then should be able to easily convert the output from the Module 2 solutions into a beautiful report, in your choice of format (PDF/Word/HTML) by simply pressing the knit button at the top of the window and selecting the output format. This will initially ask you to install a few more packages, and you will always be prompted to save your document, if there are unsaved changes, before any output is made.
 
 ```{r echo=FALSE, out.width="40%", fig.align='left'}
 knitr::include_graphics("images/knit.JPG")
 ```
 
+Try it now using either of the module 2 solutions RMD file.
 
-And the first time you do this you will probably be asked to install some libraries within R. Try it now using either of the solutions RMD files that you have downloaded, and should still have open in RStudio.
+There are a lot of ways to improve on the default appearance of your output, but going in detail to this is a little beyond the scope the course. If you are interested in learning more, see the markdown cheat sheet for more information <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank"> here </a>
 
-There are a lot of ways to improve on the default appearance of your output, but going in detail to this is a little beyond the scope the course. There are some guides in the resources section of the workbook which may help you if you are interested in learning more.
+## Appendix: Useful reference links
 
-You may see online people using the .R format script file, instead of the .RMD format markdown file. This is an older format for writing R scripts which does not contain any of the interactive features or the ability to write and format text outside of R commands. When writing your own files we strongly recommend using the RMD format. The RMD file is specific to RStudio - so if you do ever come across a strange person who uses R but not RStudio (they do exist, but are something of an endangered species!) they might prefer to use the .R script file instead of the .RMD markdown file. When you become more of an experienced R user, you may also find .R script files useful when you are writing code to create functions or applications, rather than writing code for working with your own data.
+RStudio website:<a href="https://rstudio.com/" target="_blank">https://rstudio.com/ </a>
 
-In the next workbook we will cover importing data into R, and you can then start building your own RMD files from scratch to interact with R!
+R-project website:<a href="https://www.r-project.org/" target="_blank">https://www.r-project.org/ </a>
 
-## Appendix:  Useful reference links  
+Andy Field's Getting started in R and RStudio:<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started" target="_blank">http://milton-the-cat.rocks/learnr/r/r_getting_started </a>
 
-RStudio website:<a href="https://rstudio.com/" target="_blank">https://rstudio.com/   </a> 
+R Markdown documentation:<a href="https://rmarkdown.rstudio.com/lesson-1.html" target="_blank">https://rmarkdown.rstudio.com/lesson-1.html </a>
 
-R-project website:<a href="https://www.r-project.org/" target="_blank">https://www.r-project.org/   </a> 
+RStudio CheatSheet:<a href="https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf" target="_blank">https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf </a>
 
-Andy Field's Getting started in R and RStudio:<a href="http://milton-the-cat.rocks/learnr/r/r_getting_started" target="_blank">http://milton-the-cat.rocks/learnr/r/r_getting_started   </a> 
-
-R Markdown documentation:<a href="https://rmarkdown.rstudio.com/lesson-1.html" target="_blank">https://rmarkdown.rstudio.com/lesson-1.html   </a> 
-
-RStudio CheatSheet:<a href="https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf" target="_blank">https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf   </a>
-
-R Markdown CheatSheet:<a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank">https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf   </a>
-
-
+R Markdown CheatSheet:<a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank">https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf </a>
