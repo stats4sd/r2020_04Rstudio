@@ -114,7 +114,7 @@ One of the first things I would generally suggest doing is minimising the consol
 
 ## R Markdown Files
 
-Now let's take a look at the script file you have opened. format being using in this course is a .RMD (R Markdown) file. Within this format you can write notes and have interactive code chunks, with in-line output like you have been seeing with the online tutorials. Pressing the green 'play' button to the right of the chunk of code will run the code. The output will then appear directly below the code within the RMD document.
+Now let's take a look at the script file you have opened. The format being using in this course is a .RMD (R Markdown) file. Within this format you can write notes and have interactive code chunks, with in-line output like you have been seeing with the online tutorials. Pressing the green 'play' button to the right of the chunk of code will run the code. The output will then appear directly below the code within the RMD document.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
 knitr::include_graphics("images/RunningCode.JPG")
@@ -238,7 +238,7 @@ The next workbook for this module will cover what you need to do if you find you
 
 ## Exporting Results
 
-One of the great things about using R markdown files and R project files, is how easy it is to export results outside of R. If you have followed the advice in this module and installed all required packages then should be able to easily convert the output from the Module 2 solutions into a beautiful report, in your choice of format (PDF/Word/HTML) by simply pressing the knit button at the top of the window and selecting the output format. This will initially ask you to install a few more packages, and you will always be prompted to save your document, if there are unsaved changes, before any output is made.
+One of the great things about using R markdown files and R project files, is how easy it is to export results outside of R. If you have followed the advice in this module and installed all required packages then you should be able to easily convert the output from the Module 2 solutions into a beautiful report, in your choice of format (PDF/Word/HTML) by simply pressing the knit button at the top of the window and selecting the output format. This will initially ask you to install a few more packages, and you will always be prompted to save your document, if there are unsaved changes, before any output is made.
 
 ```{r echo=FALSE, out.width="40%", fig.align='left'}
 knitr::include_graphics("images/knit.JPG")
@@ -260,4 +260,4 @@ R Markdown documentation:<a href="https://rmarkdown.rstudio.com/lesson-1.html" t
 
 RStudio CheatSheet:<a href="https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf" target="_blank">https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf </a>
 
-R Markdown CheatSheet:<a href="https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf" target="_blank">https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf </a>
+R Markdown CheatSheet:<a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank">https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf </a>
