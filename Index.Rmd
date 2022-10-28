@@ -149,7 +149,7 @@ knitr::include_graphics("images/objects in environment.JPG")
 There are two kinds of object produced in this session - 'data' and 'values'. Notice that there is a blue button next to the `airquality` data. Clicking on the blue button will show you the column names, the class of each of the columns (integer, numeric, character) and the first few entries in each column.
 
 ```{r echo=FALSE, out.width="70%", fig.align='center'}
-knitr::include_graphics("images/blue_button.JPG")
+knitr::include_graphics("images/blue_button.jpg")
 ```
 
 Clicking on the name of the dataset will open up a spreadsheet view that will let you explore the data - similar to how you could in excel. Although note that the data cannot be edited through this spreadsheet view.
