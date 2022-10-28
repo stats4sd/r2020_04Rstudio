@@ -12,7 +12,7 @@ description: >
 
 ```{r setup, include=FALSE}
 library(learnr)
-
+library(tidyverse)
 tutorial_options(exercise.timelimit = 10)
 ```
 
