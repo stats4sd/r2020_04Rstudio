@@ -12,7 +12,6 @@ description: >
 
 ```{r setup, include=FALSE}
 library(learnr)
-library(tidyverse)
 
 tutorial_options(exercise.timelimit = 10)
 ```
@@ -53,7 +52,7 @@ The first thing to install is the most recent version of R for your operating sy
 
 <a href="https://cran.r-project.org/bin/macosx/" target="_blank">Download R for Mac</a>
 
-Once you have completed the installation of R you can download RStudio, the link below should provide the recommended link to download based on your operating system. <a href="https://RStudio.com/products/RStudio/download/#download" target="_blank">Download RStudio</a>
+Once you have completed the installation of R you can download RStudio, the link below should provide the recommended link to download based on your operating system. <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">Download RStudio</a>
 
 (Note: RStudio is, as of September 2022, both the name of the software and the name of the organisation who makes the software. From October 2022 the organisation is re-branding as 'Posit', but the name of the software will remain as 'RStudio'. At the time of writing this has not yet changed - we expect that the link above will remain valid but will redirect to a page on <https://posit.co> where you can download RStudio, so do not panic if you find yourself redirected to that site instead!).
 
@@ -100,8 +99,6 @@ Here you will see three main "panes" initally.
 It is possible to totally re-organise the layourt of these panes if you want - but for now I will assume you are happy with these default layouts.
 
 Rather than starting straight from from scratch right now, let's work with a pre-existing set of file which should hopefully look familiar - the solutions from Module 1 of this course. These can be downloaded <a href="https://raw.githubusercontent.com/stats4sd/R_Course_Resources/main/Module%201%20Solutions.Rmd" download>from this link. Right click and select "Save Link As" to download to a sensible folder on your computer </a>
-
-
 
 Open the file "Module 1 Solutions.RMD" in RStudio, using the menu system within RStudio by selecting File (in the top left corner) and then Open File.
 
@@ -263,4 +260,4 @@ R Markdown documentation:<a href="https://rmarkdown.rstudio.com/lesson-1.html" t
 
 RStudio CheatSheet:<a href="https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf" target="_blank">https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf </a>
 
-R Markdown CheatSheet:<a href="https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank">https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf </a>
+R Markdown CheatSheet:<a href="https://ucdavis-bioinformatics-training.github.io/Oct2017-ILRI-Workshop/Cheat_Sheets/rstudio-IDE-cheatsheet.pdf" target="_blank">https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf </a>
