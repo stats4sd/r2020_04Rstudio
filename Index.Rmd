@@ -42,6 +42,8 @@ This module is a little different to the previous three modules - there won't be
 
 The video for this module gives you a brief tour of these features:
 
+![](https://youtu.be/tnuNTyuY-bk)
+
 ## Installing R and RStudio
 
 Both R and RStudio are open source software tools, and these can be downloaded for free. Versions are compatible with nearly all operating systems.
