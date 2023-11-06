@@ -54,9 +54,7 @@ The first thing to install is the most recent version of R for your operating sy
 
 <a href="https://cran.r-project.org/bin/macosx/" target="_blank">Download R for Mac</a>
 
-Once you have completed the installation of R you can download RStudio, the link below should provide the recommended link to download based on your operating system. <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">Download RStudio</a>
-
-(Note: RStudio is, as of September 2022, both the name of the software and the name of the organisation who makes the software. From October 2022 the organisation is re-branding as 'Posit', but the name of the software will remain as 'RStudio'. At the time of writing this has not yet changed - we expect that the link above will remain valid but will redirect to a page on <https://posit.co> where you can download RStudio, so do not panic if you find yourself redirected to that site instead!).
+Once you have completed the installation of R you can download RStudio, the link below should provide the recommended link to download based on your operating system. <a href="https://posit.co/download/rstudio-desktop/#download" target="_blank">Download RStudio</a>
 
 You should not need to change any of the default settings as you work through the installation process. If you are having any issues with the downloading and installation process please make sure that you have administrator rights on the computer you are working on.
 
