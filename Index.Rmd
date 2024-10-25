@@ -212,7 +212,7 @@ Once you have finished it is usually a good idea to save your script file - in a
 
 ## Working with projects
 
-Once you have saved any changes let's now move to a completely different task - thinking now about the solutions to Module 2. You can download a zip file containing the solutions for Module 2 in RMD format, and the data files used, in CSV format [here](https://github.com/stats4sd/RCourse_2023_download_files/raw/dev/Module-2-Solutions.zip)
+Once you have saved any changes let's now move to a completely different task - thinking now about the solutions to Module 2. You can download a zip file containing the solutions for Module 2 in RMD format, and the data files used, in CSV format [here](https://github.com/stats4sd/r2020_04Rstudio/raw/refs/heads/release/2024/Module%202%20Solutions.zip)
 
 First of all - we should start by extracting the contents of that zip file into a sensible folder somewhere on your computer.
 
