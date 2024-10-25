@@ -162,7 +162,7 @@ There are two other formats of script file it is also worth being aware of:
 
 The .R (R Script) format, which is a older and contains only commands - the output is not shown in line for the .R file, instead it goes to the console. containing the solutions you can see two distinct types of content on the page.
 
-The .QMD (Quarto) format, which is very similar to the .RMD format on the surface but is much newer. The main difference is that this format has better cross-language compatibility, if for example you start wanting to use Python and R in the same analysis, or more generally just use the same setup for coding in Python as you use for coding in R. Longer term this format may start to get more usage - but as of 2022 it is still new and not widely adopted, so we would recommend using the .RMD format as it is likely you will find it easier to get support for this in case of problems and in this course at least, we are only focused on running R code.
+The .QMD (Quarto) format, which is very similar to the .RMD format on the surface but is much newer. The main difference is that this format has better cross-language compatibility, if for example you start wanting to use Python and R in the same analysis, or more generally just use the same setup for coding in Python as you use for coding in R. Longer term this format may start to get more usage - but as of 2024 it is still not widely adopted, so we would recommend using the .RMD format as it is likely you will find it easier to get support for this in case of problems and in this course at least, we are only focused on running R code.
 
 ## Installing Packages
 
@@ -212,7 +212,7 @@ Once you have finished it is usually a good idea to save your script file - in a
 
 ## Working with projects
 
-Once you have saved any changes let's now move to a completely different task - thinking now about the solutions to Module 2. You can download a zip file containing the solutions for Module 2 in RMD format, and the data file used, in CSV format [here](https://github.com/stats4sd/RCourse_2023_download_files/raw/dev/Module-2-Solutions.zip)
+Once you have saved any changes let's now move to a completely different task - thinking now about the solutions to Module 2. You can download a zip file containing the solutions for Module 2 in RMD format, and the data files used, in CSV format [here](https://github.com/stats4sd/RCourse_2023_download_files/raw/dev/Module-2-Solutions.zip)
 
 First of all - we should start by extracting the contents of that zip file into a sensible folder somewhere on your computer.
 
